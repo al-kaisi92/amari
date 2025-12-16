@@ -1,0 +1,2755 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#8D6F62">
+  <title>Our Services - Amari Head Spa London | Luxury Head Spa Treatments</title>
+  <meta name="description" content="Explore our luxury head spa treatments including Exotic Bliss, Ultimate Exotic Bliss, Serenity, and more. Premium scalp therapy, aromatherapy, and facial treatments in London SE20.">
+  <meta name="keywords" content="head spa services, Exotic Bliss treatment, scalp massage London, Japanese head spa, Thai massage, aromatherapy facial, luxury spa treatments">
+  <link rel="canonical" href="https://www.amariheadspa.co.uk/services.html">
+  <link rel="icon" type="image/png" href="images/Logo.png">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Our Services - Amari Head Spa London">
+  <meta property="og:description" content="Luxury head spa treatments combining Japanese & Thai massage techniques with aromatherapy and facials.">
+  <meta property="og:image" content="https://www.amariheadspa.co.uk/images/new.jpeg">
+  <meta property="og:url" content="https://www.amariheadspa.co.uk/services.html">
+  <meta property="og:type" content="website">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Our Services - Amari Head Spa London">
+  <meta name="twitter:description" content="Luxury head spa treatments combining Japanese & Thai massage techniques with aromatherapy and facials.">
+  <meta name="twitter:image" content="https://www.amariheadspa.co.uk/images/new.jpeg">
+
+  <!-- Shared Styles -->
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- JSON-LD Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    "name": "Amari Head Spa Services",
+    "itemListElement": [
+      {
+        "@type": "Service",
+        "position": 1,
+        "name": "Exotic Bliss",
+        "description": "A luxurious escape blending traditional Asian techniques with deep relaxation",
+        "provider": {
+          "@type": "HealthAndBeautyBusiness",
+          "name": "Amari Head Spa"
+        },
+        "offers": {
+          "@type": "Offer",
+          "price": "85",
+          "priceCurrency": "GBP"
+        }
+      },
+      {
+        "@type": "Service",
+        "position": 2,
+        "name": "Ultimate Exotic Bliss",
+        "description": "The pinnacle of head spa indulgence with facial massage and acupressure",
+        "provider": {
+          "@type": "HealthAndBeautyBusiness",
+          "name": "Amari Head Spa"
+        },
+        "offers": {
+          "@type": "Offer",
+          "price": "145",
+          "priceCurrency": "GBP"
+        }
+      }
+    ]
+  }
+  </script>
+
+  <style>
+    /* Enhanced Services Page Styles with Clearer Colors */
+
+    .services-hero {
+      background: linear-gradient(135deg, #8D6F62 0%, #9B5E44 100%);
+      color: #FFFFFF;
+      padding: clamp(4rem, 10vw, 8rem) clamp(1rem, 3vw, 2rem) clamp(3rem, 6vw, 5rem);
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+      border-bottom: 4px solid #D2A693;
+    }
+
+    .services-hero::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: url('images/new.jpeg') center/cover;
+      opacity: 0.1;
+      z-index: 0;
+    }
+
+    .services-hero-content {
+      position: relative;
+      z-index: 1;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .services-hero h1 {
+      color: #FFFFFF;
+      margin-bottom: var(--space-md);
+      font-size: clamp(2.5rem, 6vw, 4rem);
+      font-weight: 900;
+      letter-spacing: -1px;
+      text-shadow: 0 2px 20px rgba(0, 0, 0, 0.3);
+    }
+
+    .services-hero p {
+      font-size: clamp(1.125rem, 2.5vw, 1.5rem);
+      opacity: 0.95;
+      margin-bottom: var(--space-xl);
+    }
+
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(min(100%, 380px), 1fr));
+      gap: clamp(2rem, 4vw, 2.5rem);
+    }
+
+    .service-card {
+      background: #FFFFFF;
+      border-radius: 16px;
+      padding: 0;
+      box-shadow: 0 2px 16px rgba(141, 111, 98, 0.08);
+      transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+      border: 1px solid rgba(141, 111, 98, 0.1);
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .service-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 12px 40px rgba(155, 94, 68, 0.15);
+      border-color: var(--ha-accent);
+    }
+
+    .service-card-image {
+      width: 100%;
+      height: 200px;
+      overflow: hidden;
+      border-radius: 14px 14px 0 0;
+    }
+
+    .service-card-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+      transition: transform 0.4s ease;
+    }
+
+    .service-card-image.full-image {
+      height: 400px;
+      background: var(--ha-primary);
+    }
+
+    .service-card-image.full-image img {
+      object-fit: cover;
+      object-position: center top;
+    }
+
+    .service-card:hover .service-card-image img {
+      transform: scale(1.05);
+    }
+
+    @media (max-width: 767px) {
+      .service-card-image {
+        height: 180px;
+      }
+    }
+
+    .service-card.featured {
+      border: 2px solid var(--ha-accent);
+      box-shadow: 0 4px 24px rgba(155, 94, 68, 0.12);
+    }
+
+    .service-card.featured::before {
+      content: 'MOST POPULAR';
+      position: absolute;
+      top: 20px;
+      right: -32px;
+      background: linear-gradient(135deg, var(--ha-accent) 0%, var(--ha-primary) 100%);
+      color: #FFFFFF;
+      padding: 0.4rem 2.5rem;
+      font-size: 0.625rem;
+      font-weight: 800;
+      letter-spacing: 1.2px;
+      text-transform: uppercase;
+      transform: rotate(45deg);
+      box-shadow: 0 2px 8px rgba(155, 94, 68, 0.3);
+      z-index: 10;
+    }
+
+    .service-header {
+      background: #FFFFFF;
+      padding: clamp(1rem, 2.5vw, 1.25rem) clamp(1.5rem, 3vw, 2rem);
+      border-bottom: 1px solid rgba(141, 111, 98, 0.08);
+      text-align: center;
+      position: relative;
+      z-index: 2;
+    }
+
+    .service-header h3 {
+      font-size: clamp(1.5rem, 3.5vw, 1.875rem);
+      margin: 0 0 var(--space-sm) 0;
+      color: var(--ha-primary);
+      font-weight: 800;
+      letter-spacing: -0.5px;
+    }
+
+    .service-duration {
+      color: var(--ha-secondary);
+      font-size: clamp(0.875rem, 2vw, 1rem);
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      display: inline-block;
+      padding: 0.375rem 1rem;
+      background: rgba(155, 94, 68, 0.08);
+      border-radius: 20px;
+    }
+
+    .service-price {
+      font-size: clamp(2.25rem, 5vw, 2.75rem);
+      font-weight: 900;
+      color: var(--ha-accent);
+      margin: var(--space-md) 0 0 0;
+      padding: 0;
+      text-align: center;
+    }
+
+    .service-description {
+      flex: 1;
+      color: var(--text-dark);
+      line-height: 1.7;
+      padding: clamp(1.5rem, 3vw, 2rem);
+    }
+
+    .service-tagline {
+      font-size: clamp(0.9375rem, 2vw, 1.0625rem);
+      color: var(--ha-primary);
+      font-weight: 600;
+      font-style: italic;
+      margin-bottom: var(--space-md);
+      opacity: 0.85;
+      line-height: 1.5;
+    }
+
+    .compare-toggle-btn {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      margin: 0 auto var(--space-xl);
+      padding: 0.75rem 1.5rem;
+      background: var(--ha-accent);
+      color: #FFFFFF;
+      border: none;
+      border-radius: var(--radius-full);
+      font-weight: 700;
+      font-size: clamp(0.875rem, 1.75vw, 0.9375rem);
+      cursor: pointer;
+      transition: all var(--transition);
+      box-shadow: 0 2px 12px rgba(155, 94, 68, 0.2);
+    }
+
+    .compare-toggle-btn:hover {
+      background: var(--ha-primary);
+      transform: translateY(-2px);
+      box-shadow: 0 4px 16px rgba(155, 94, 68, 0.3);
+    }
+
+    .compare-toggle-btn svg {
+      stroke: currentColor;
+    }
+
+    .compare-toggle-btn.active {
+      background: var(--ha-primary);
+    }
+
+    .comparison-table-wrapper {
+      display: none;
+      overflow-x: auto;
+      overflow-y: hidden;
+      margin-bottom: var(--space-2xl);
+      border-radius: 16px;
+      box-shadow: 0 4px 24px rgba(141, 111, 98, 0.12);
+      -webkit-overflow-scrolling: touch;
+      scrollbar-width: thin;
+      scrollbar-color: var(--ha-accent) rgba(141, 111, 98, 0.1);
+    }
+
+    .comparison-table-wrapper::before {
+      content: none;
+      display: none;
+    }
+
+    .comparison-table-wrapper::-webkit-scrollbar {
+      height: 8px;
+    }
+
+    .comparison-table-wrapper::-webkit-scrollbar-track {
+      background: rgba(141, 111, 98, 0.1);
+      border-radius: 4px;
+    }
+
+    .comparison-table-wrapper::-webkit-scrollbar-thumb {
+      background: var(--ha-accent);
+      border-radius: 4px;
+    }
+
+    .comparison-table-wrapper::-webkit-scrollbar-thumb:hover {
+      background: var(--ha-primary);
+    }
+
+    .comparison-table-wrapper.active {
+      display: block;
+    }
+
+    @media (min-width: 768px) {
+      .comparison-table-wrapper::before {
+        display: none !important;
+      }
+    }
+
+    .comparison-table {
+      width: 100%;
+      min-width: 900px;
+      border-collapse: collapse;
+      background: #FFFFFF;
+    }
+
+    .comparison-table th {
+      background: linear-gradient(135deg, var(--ha-light) 0%, #FFFFFF 100%);
+      color: var(--ha-primary);
+      font-weight: 800;
+      text-align: left;
+      padding: 1.25rem 1rem;
+      border-bottom: 2px solid var(--ha-accent);
+      font-size: clamp(0.875rem, 1.75vw, 0.9375rem);
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    .comparison-table td {
+      padding: 1rem;
+      border-bottom: 1px solid rgba(141, 111, 98, 0.1);
+      color: var(--text-dark);
+      font-size: clamp(0.875rem, 1.75vw, 0.9375rem);
+    }
+
+    .comparison-table tr:hover {
+      background: rgba(249, 240, 232, 0.3);
+    }
+
+    .comparison-table .treatment-name {
+      font-weight: 700;
+      color: var(--ha-primary);
+      font-size: clamp(0.9375rem, 2vw, 1.0625rem);
+    }
+
+    .comparison-table .price-cell {
+      font-weight: 800;
+      color: var(--ha-accent);
+      font-size: clamp(1.125rem, 2.25vw, 1.25rem);
+    }
+
+    .comparison-table .check-icon {
+      color: #28A745;
+      font-size: 1.25rem;
+      font-weight: 700;
+    }
+
+    .comparison-table .cross-icon {
+      color: #DC3545;
+      font-size: 1.25rem;
+      font-weight: 700;
+      opacity: 0.3;
+    }
+
+    .services-grid.table-mode {
+      display: none;
+    }
+
+    .service-features {
+      list-style: none;
+      padding: 0;
+      margin: var(--space-md) 0 var(--space-lg);
+      background: transparent;
+      border-radius: 0;
+      border-left: none;
+    }
+
+    .service-features-title {
+      font-weight: 700;
+      color: var(--ha-primary);
+      margin-bottom: var(--space-sm);
+      font-size: clamp(0.875rem, 2vw, 1rem);
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      opacity: 0.8;
+    }
+
+    .service-features li {
+      padding: 0.5rem 0 0.5rem 1.75rem;
+      position: relative;
+      line-height: 1.6;
+      color: var(--text-dark);
+      font-size: clamp(0.875rem, 1.75vw, 0.9375rem);
+      opacity: 0.85;
+    }
+
+    .service-features li::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0.875rem;
+      width: 6px;
+      height: 6px;
+      background: var(--ha-accent);
+      border-radius: 50%;
+    }
+
+    .view-more-treatments-btn {
+      display: none;
+      width: 100%;
+      max-width: 300px;
+      margin: var(--space-xl) auto;
+      padding: clamp(0.875rem, 2.5vw, 1rem) clamp(1.5rem, 4vw, 2rem);
+      background: var(--ha-accent);
+      color: white;
+      border: none;
+      border-radius: var(--radius-full);
+      font-weight: 700;
+      font-size: clamp(0.9375rem, 2vw, 1rem);
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      cursor: pointer;
+      transition: all var(--transition);
+      box-shadow: 0 4px 16px rgba(155, 94, 68, 0.2);
+    }
+
+    .view-more-treatments-btn:hover {
+      background: var(--ha-primary);
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(155, 94, 68, 0.3);
+    }
+
+    @media (max-width: 767px) {
+      .view-more-treatments-btn {
+        display: block;
+      }
+    }
+
+    .vegan-note {
+      font-style: normal;
+      color: var(--ha-secondary);
+      font-size: clamp(0.8125rem, 1.75vw, 0.875rem);
+      margin-top: 0;
+      padding: 0;
+      background: transparent;
+      border-radius: 0;
+      border: none;
+      opacity: 0.7;
+    }
+
+    .service-card .btn {
+      margin: 0 clamp(1.5rem, 3vw, 2rem) clamp(1.5rem, 3vw, 2rem);
+      width: calc(100% - clamp(3rem, 6vw, 4rem));
+    }
+
+    /* View Full Details Link Styles */
+    .learn-more-btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+      margin: 0 clamp(1.5rem, 3vw, 2rem) var(--space-md);
+      padding: 0.875rem 1.75rem;
+      background: transparent;
+      color: var(--ha-accent);
+      border: 2px solid var(--ha-accent);
+      border-radius: var(--radius-full);
+      font-weight: 700;
+      font-size: clamp(0.875rem, 1.75vw, 1rem);
+      cursor: pointer;
+      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      width: calc(100% - clamp(3rem, 6vw, 4rem));
+      text-decoration: none;
+      text-align: center;
+      letter-spacing: 0.3px;
+    }
+
+    .learn-more-btn:hover {
+      background: var(--ha-accent);
+      color: #FFFFFF;
+      transform: translateY(-2px);
+      box-shadow: 0 4px 16px rgba(155, 94, 68, 0.25);
+    }
+
+    .learn-more-btn:active {
+      transform: translateY(0);
+      box-shadow: 0 2px 8px rgba(155, 94, 68, 0.2);
+    }
+
+    .learn-more-icon {
+      transition: transform 0.3s ease;
+      font-size: 1rem;
+      font-weight: 700;
+    }
+
+    .learn-more-btn:hover .learn-more-icon {
+      transform: translateX(4px);
+    }
+
+    /* Mobile Responsiveness for Service Cards */
+    @media (max-width: 767px) {
+      .service-card {
+        margin-bottom: var(--space-lg);
+      }
+
+      .learn-more-btn {
+        padding: 0.75rem 1.5rem;
+        font-size: 0.875rem;
+        margin: 0 var(--space-md) var(--space-md);
+        width: calc(100% - calc(var(--space-md) * 2));
+      }
+
+      .service-card .btn {
+        margin: 0 var(--space-md) var(--space-md);
+        width: calc(100% - calc(var(--space-md) * 2));
+        padding: 1rem 1.5rem;
+      }
+
+      .services-grid {
+        gap: var(--space-lg);
+      }
+    }
+
+    @media (max-width: 480px) {
+      .learn-more-btn {
+        padding: 0.625rem 1.25rem;
+        gap: 0.375rem;
+      }
+
+      .learn-more-icon {
+        font-size: 0.875rem;
+      }
+
+      .service-card .btn {
+        font-size: 0.9375rem;
+      }
+
+      .service-price {
+        font-size: 2rem;
+      }
+
+      .service-header h3 {
+        font-size: 1.375rem;
+      }
+    }
+
+    /* Improved Touch Targets for Mobile */
+    @media (max-width: 767px) {
+      .learn-more-btn,
+      .service-card .btn {
+        min-height: 44px; /* Apple's recommended touch target size */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .service-card {
+        box-shadow: 0 1px 12px rgba(141, 111, 98, 0.1);
+      }
+
+      .service-card:active {
+        transform: scale(0.98);
+      }
+
+      .best-for-tags {
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+    }
+
+    /* Smooth Scrolling for All Devices */
+    html {
+      scroll-behavior: smooth;
+    }
+
+    /* Prevent Horizontal Scroll on Mobile */
+    @media (max-width: 767px) {
+      body {
+        overflow-x: hidden;
+      }
+
+      .section-inner {
+        padding-left: var(--space-md);
+        padding-right: var(--space-md);
+      }
+    }
+
+    .massage-collection {
+      margin-top: clamp(4rem, 8vw, 6rem);
+      padding: 0;
+      background: transparent;
+      border-radius: 0;
+      border: none;
+    }
+
+    .massage-collection h3 {
+      font-size: clamp(1.875rem, 4.5vw, 2.5rem);
+      margin-bottom: var(--space-md);
+      color: var(--ha-primary);
+      text-align: center;
+      font-weight: 800;
+      letter-spacing: -0.5px;
+    }
+
+    .massage-collection > p {
+      text-align: center;
+      color: var(--text-dark);
+      font-size: clamp(1rem, 2.25vw, 1.125rem);
+      margin-bottom: var(--space-2xl);
+      max-width: 650px;
+      margin-left: auto;
+      margin-right: auto;
+      opacity: 0.9;
+    }
+
+    .massage-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(min(100%, 380px), 1fr));
+      gap: clamp(2rem, 4vw, 2.5rem);
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .massage-card {
+      background: #FFFFFF;
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 2px 16px rgba(141, 111, 98, 0.08);
+      transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+      border: 1px solid rgba(141, 111, 98, 0.1);
+      display: flex;
+      flex-direction: column;
+      position: relative;
+    }
+
+    .massage-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 12px 40px rgba(155, 94, 68, 0.15);
+      border-color: var(--ha-accent);
+    }
+
+    .massage-card-image {
+      width: 100%;
+      height: 200px;
+      overflow: hidden;
+      border-radius: 16px 16px 0 0;
+    }
+
+    .massage-card-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+      transition: transform 0.4s ease;
+    }
+
+    .massage-card:hover .massage-card-image img {
+      transform: scale(1.05);
+    }
+
+    @media (max-width: 767px) {
+      .massage-card-image {
+        height: 180px;
+      }
+    }
+
+    .massage-header {
+      background: #FFFFFF;
+      padding: clamp(1rem, 2.5vw, 1.25rem) clamp(1.5rem, 3vw, 2rem);
+      border-bottom: 1px solid rgba(141, 111, 98, 0.08);
+      text-align: center;
+    }
+
+    .massage-header h4 {
+      color: var(--ha-primary);
+      font-size: clamp(1.5rem, 3.5vw, 1.875rem);
+      margin: 0 0 var(--space-sm) 0;
+      font-weight: 800;
+      letter-spacing: -0.5px;
+    }
+
+    .massage-duration {
+      color: var(--ha-secondary);
+      font-size: clamp(0.875rem, 2vw, 1rem);
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      display: inline-block;
+      padding: 0.375rem 1rem;
+      background: rgba(155, 94, 68, 0.08);
+      border-radius: 20px;
+      margin: 0;
+    }
+
+    .massage-price {
+      color: var(--ha-accent);
+      font-size: clamp(2.25rem, 5vw, 2.75rem);
+      font-weight: 900;
+      margin: var(--space-md) 0 0 0;
+      text-align: center;
+    }
+
+    .massage-description {
+      flex: 1;
+      padding: clamp(1.5rem, 3vw, 2rem);
+      color: var(--text-dark);
+      line-height: 1.7;
+    }
+
+    .massage-description > p {
+      font-size: clamp(1rem, 2.25vw, 1.125rem);
+      color: var(--ha-primary);
+      font-weight: 600;
+      line-height: 1.6;
+      margin-bottom: var(--space-md);
+    }
+
+    .massage-features {
+      list-style: none;
+      padding: 0;
+      margin: var(--space-md) 0 var(--space-lg);
+    }
+
+    .massage-features li {
+      padding: 0.5rem 0 0.5rem 1.75rem;
+      position: relative;
+      line-height: 1.6;
+      color: var(--text-dark);
+      font-size: clamp(0.875rem, 1.75vw, 0.9375rem);
+      opacity: 0.85;
+    }
+
+    .massage-features li::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0.875rem;
+      width: 6px;
+      height: 6px;
+      background: var(--ha-accent);
+      border-radius: 50%;
+    }
+
+    .massage-card .btn {
+      margin: 0 clamp(1.5rem, 3vw, 2rem) clamp(1.5rem, 3vw, 2rem);
+      width: calc(100% - clamp(3rem, 6vw, 4rem));
+    }
+
+    .massage-badge {
+      position: absolute;
+      top: 16px;
+      right: 16px;
+      background: linear-gradient(135deg, var(--ha-accent) 0%, #B8794E 100%);
+      color: #FFFFFF;
+      padding: 0.5rem 1rem;
+      border-radius: 20px;
+      font-size: 0.75rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      box-shadow: 0 2px 12px rgba(155, 94, 68, 0.25);
+      z-index: 5;
+    }
+
+    .cta-banner {
+      background: linear-gradient(135deg, #F9F0E8 0%, #FFFFFF 100%);
+      color: var(--text-dark);
+      text-align: center;
+      padding: clamp(3rem, 6vw, 4.5rem) clamp(1rem, 3vw, 2rem);
+      margin-top: clamp(4rem, 8vw, 6rem);
+      border-radius: 20px;
+      box-shadow: 0 4px 24px rgba(141, 111, 98, 0.12);
+      border: 1px solid rgba(141, 111, 98, 0.15);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .cta-banner::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 4px;
+      background: linear-gradient(90deg, var(--ha-accent) 0%, var(--ha-primary) 100%);
+    }
+
+    .cta-banner h2 {
+      color: var(--ha-primary);
+      margin-bottom: var(--space-sm);
+      font-size: clamp(2rem, 5vw, 2.75rem);
+      font-weight: 900;
+      letter-spacing: -0.5px;
+    }
+
+    .cta-trust {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: var(--space-sm);
+      margin-bottom: var(--space-md);
+      flex-wrap: wrap;
+    }
+
+    .cta-rating {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      color: var(--ha-accent);
+      font-weight: 700;
+      font-size: clamp(0.9375rem, 2vw, 1.0625rem);
+    }
+
+    .cta-stars {
+      color: #FFB800;
+      font-size: 1.125rem;
+      letter-spacing: 2px;
+    }
+
+    .cta-divider {
+      width: 1px;
+      height: 20px;
+      background: rgba(141, 111, 98, 0.2);
+    }
+
+    .cta-clients {
+      color: var(--ha-secondary);
+      font-weight: 600;
+      font-size: clamp(0.875rem, 1.75vw, 1rem);
+    }
+
+    .cta-banner p {
+      font-size: clamp(1.0625rem, 2.25vw, 1.25rem);
+      margin-bottom: var(--space-lg);
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+      color: var(--ha-secondary);
+      font-weight: 500;
+      line-height: 1.6;
+    }
+
+    .cta-buttons {
+      display: flex;
+      gap: var(--space-md);
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-bottom: var(--space-sm);
+    }
+
+    .cta-note {
+      margin-top: var(--space-md);
+      font-size: clamp(0.8125rem, 1.75vw, 0.875rem);
+      color: var(--ha-accent);
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+    }
+
+    .cta-note svg {
+      width: 16px;
+      height: 16px;
+      fill: var(--ha-accent);
+    }
+
+    .btn-whatsapp {
+      background: #25D366;
+      color: #FFFFFF;
+      border: 2px solid #25D366;
+    }
+
+    .btn-whatsapp:hover {
+      background: #128C7E;
+      border-color: #128C7E;
+      transform: translateY(-2px);
+    }
+
+    .note-text {
+      margin-top: var(--space-sm);
+      font-size: 0.9375rem;
+      color: var(--text-dark);
+      font-style: italic;
+    }
+
+    /* New Enhancements */
+    .service-categories {
+      background: #FFFFFF;
+      padding: clamp(2rem, 4vw, 3rem) clamp(1rem, 3vw, 2rem);
+      border-bottom: 3px solid #F9F0E8;
+    }
+
+    .category-filters {
+      display: flex;
+      gap: var(--space-md);
+      justify-content: center;
+      flex-wrap: wrap;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    .category-btn {
+      padding: 0.75rem 1.5rem;
+      background: #F9F0E8;
+      color: #8D6F62;
+      border: 2px solid #D2A693;
+      border-radius: 50px;
+      font-weight: 700;
+      font-size: clamp(0.875rem, 2vw, 1rem);
+      cursor: pointer;
+      transition: all 0.3s ease;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .category-btn:hover,
+    .category-btn.active {
+      background: #9B5E44;
+      color: #FFFFFF;
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(155, 94, 68, 0.3);
+    }
+
+    .best-for-tag {
+      display: inline-block;
+      padding: 0.375rem 0.875rem;
+      background: rgba(155, 94, 68, 0.08);
+      color: var(--ha-accent);
+      border-radius: 16px;
+      font-size: 0.75rem;
+      font-weight: 600;
+      margin: 0.25rem;
+      text-transform: capitalize;
+      letter-spacing: 0.3px;
+      border: 1px solid rgba(155, 94, 68, 0.15);
+    }
+
+    .best-for-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin: var(--space-sm) 0 var(--space-md) 0;
+      padding: 0 clamp(1.5rem, 3vw, 2rem);
+      background: transparent;
+      border-radius: 0;
+      justify-content: center;
+    }
+
+    .value-badge {
+      position: absolute;
+      top: -14px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: linear-gradient(135deg, var(--ha-accent) 0%, #B8794E 100%);
+      color: #FFFFFF;
+      padding: 0.5rem 1rem;
+      border-radius: 20px;
+      font-size: 0.75rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      box-shadow: 0 2px 12px rgba(155, 94, 68, 0.25);
+      z-index: 5;
+      white-space: nowrap;
+    }
+
+    .service-card:has(.value-badge) {
+      margin-top: 1.5rem;
+    }
+
+    .comparison-helper {
+      background: linear-gradient(135deg, #F9F0E8 0%, #FFFFFF 100%);
+      padding: clamp(2.5rem, 5vw, 4rem) clamp(1rem, 3vw, 2rem);
+      margin: clamp(3rem, 6vw, 5rem) 0;
+      border-radius: 20px;
+      border: 3px solid #D2A693;
+    }
+
+    .comparison-helper h3 {
+      text-align: center;
+      color: #8D6F62;
+      font-size: clamp(1.75rem, 4vw, 2.25rem);
+      margin-bottom: var(--space-xl);
+      font-weight: 900;
+    }
+
+    .comparison-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(min(100%, 250px), 1fr));
+      gap: clamp(1.5rem, 3vw, 2rem);
+    }
+
+    .comparison-card {
+      background: #FFFFFF;
+      padding: var(--space-lg);
+      border-radius: 16px;
+      text-align: center;
+      border: 2px solid #9B5E44;
+      transition: all 0.3s ease;
+    }
+
+    .comparison-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 8px 25px rgba(155, 94, 68, 0.2);
+    }
+
+    .comparison-icon {
+      width: clamp(60px, 10vw, 80px);
+      height: clamp(60px, 10vw, 80px);
+      margin: 0 auto var(--space-md);
+      background: linear-gradient(135deg, var(--ha-light) 0%, rgba(249, 240, 232, 0.5) 100%);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 4px 16px rgba(155, 94, 68, 0.15);
+    }
+
+    .comparison-icon svg {
+      width: clamp(35px, 5vw, 45px);
+      height: clamp(35px, 5vw, 45px);
+      fill: var(--ha-accent);
+    }
+
+    .comparison-card h4 {
+      color: #9B5E44;
+      font-size: clamp(1.125rem, 2.5vw, 1.375rem);
+      margin-bottom: var(--space-sm);
+      font-weight: 800;
+    }
+
+    .comparison-card p {
+      color: #53473E;
+      margin-bottom: var(--space-md);
+      line-height: 1.6;
+    }
+
+    .comparison-card .recommended {
+      font-weight: 700;
+      color: #8D6F62;
+      font-size: 0.9375rem;
+    }
+
+    .trust-indicators {
+      background: #FFFFFF;
+      padding: clamp(2rem, 4vw, 3rem) clamp(1rem, 3vw, 2rem);
+      text-align: center;
+    }
+
+    .trust-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(min(100%, 200px), 1fr));
+      gap: clamp(1.5rem, 3vw, 2.5rem);
+      max-width: 1000px;
+      margin: var(--space-xl) auto 0;
+    }
+
+    .trust-stat {
+      padding: var(--space-lg);
+    }
+
+    .trust-number {
+      font-size: clamp(2.5rem, 5vw, 3.5rem);
+      font-weight: 900;
+      color: #9B5E44;
+      line-height: 1;
+      margin-bottom: var(--space-sm);
+    }
+
+    .trust-label {
+      color: #8D6F62;
+      font-weight: 600;
+      font-size: clamp(1rem, 2vw, 1.125rem);
+    }
+
+    .faq-section {
+      background: #F9F0E8;
+      padding: clamp(3rem, 6vw, 5rem) clamp(1rem, 3vw, 2rem);
+      margin-top: clamp(3rem, 6vw, 5rem);
+    }
+
+    .faq-section h3 {
+      text-align: center;
+      color: #8D6F62;
+      font-size: clamp(1.875rem, 4.5vw, 2.5rem);
+      margin-bottom: var(--space-2xl);
+      font-weight: 900;
+    }
+
+    .faq-container {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .faq-item {
+      background: #FFFFFF;
+      padding: 0;
+      margin-bottom: var(--space-md);
+      border-radius: 12px;
+      border-left: 4px solid #9B5E44;
+      box-shadow: 0 2px 8px rgba(141, 111, 98, 0.1);
+      overflow: hidden;
+      transition: all 0.3s ease;
+    }
+
+    .faq-item:hover {
+      box-shadow: 0 4px 16px rgba(141, 111, 98, 0.15);
+    }
+
+    .faq-question {
+      color: #8D6F62;
+      font-weight: 800;
+      font-size: clamp(1.0625rem, 2.25vw, 1.25rem);
+      margin: 0;
+      padding: var(--space-lg);
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: all 0.3s ease;
+      user-select: none;
+    }
+
+    .faq-question:hover {
+      background: rgba(249, 240, 232, 0.5);
+    }
+
+    .faq-question::after {
+      content: '+';
+      font-size: 1.75rem;
+      font-weight: 700;
+      color: #9B5E44;
+      transition: transform 0.3s ease;
+      flex-shrink: 0;
+      margin-left: var(--space-md);
+    }
+
+    .faq-item.active .faq-question::after {
+      transform: rotate(45deg);
+    }
+
+    .faq-answer {
+      color: #53473E;
+      line-height: 1.7;
+      font-size: clamp(0.9375rem, 2vw, 1.0625rem);
+      padding: 0 var(--space-lg) var(--space-lg);
+      max-height: 0;
+      overflow: hidden;
+      transition: all 0.4s ease;
+      opacity: 0;
+    }
+
+    .faq-item.active .faq-answer {
+      max-height: 500px;
+      opacity: 1;
+      padding-top: 0;
+    }
+
+    /* Mobile Responsive Styles */
+    @media (max-width: 767px) {
+      /* Hero Section */
+      .services-hero {
+        padding: 3rem 1rem 2rem;
+      }
+
+      .services-hero h1 {
+        font-size: clamp(2rem, 8vw, 2.5rem);
+      }
+
+      .services-hero p {
+        font-size: clamp(1rem, 3.5vw, 1.125rem);
+        margin-bottom: var(--space-lg);
+      }
+
+      /* Trust Indicators */
+      .trust-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+      }
+
+      .trust-number {
+        font-size: clamp(2rem, 7vw, 2.5rem);
+      }
+
+      .trust-label {
+        font-size: clamp(0.875rem, 2.5vw, 1rem);
+      }
+
+      /* Category Filters */
+      .service-categories {
+        padding: 1.5rem 1rem;
+      }
+
+      .category-filters {
+        gap: 0.75rem;
+      }
+
+      .category-btn {
+        padding: 0.625rem 1.25rem;
+        font-size: 0.8125rem;
+      }
+
+      /* Comparison Helper */
+      .comparison-helper {
+        padding: 2rem 1rem;
+        margin: 2rem 0;
+      }
+
+      .comparison-grid {
+        grid-template-columns: 1fr;
+        gap: 1.25rem;
+      }
+
+      .comparison-icon {
+        width: 60px;
+        height: 60px;
+      }
+
+      .comparison-icon svg {
+        width: 30px;
+        height: 30px;
+      }
+
+      /* Service Cards */
+      .services-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+      }
+
+      .services-grid.show-limited .service-card:nth-child(n+4) {
+        display: none;
+      }
+
+      .service-card {
+        border-width: 2px;
+      }
+
+      .service-card.featured::before {
+        right: -30px;
+        padding: 0.4rem 2.5rem;
+        font-size: 0.625rem;
+      }
+
+      .service-header {
+        padding: 1.5rem 1.25rem;
+      }
+
+      .service-header h3 {
+        font-size: clamp(1.375rem, 5vw, 1.625rem);
+      }
+
+      .service-duration {
+        font-size: 0.875rem;
+      }
+
+      .service-price {
+        font-size: clamp(1.875rem, 7vw, 2.25rem);
+      }
+
+      .service-description {
+        padding: 1.5rem 1.25rem;
+      }
+
+      .service-features {
+        padding: 0;
+        margin: var(--space-sm) 0 var(--space-md);
+      }
+
+      .service-features li {
+        font-size: 0.875rem;
+        padding: 0.4rem 0 0.4rem 1.5rem;
+      }
+
+      .service-features li::before {
+        width: 5px;
+        height: 5px;
+        top: 0.75rem;
+      }
+
+      .best-for-tags {
+        padding: 0 1.25rem;
+        margin: var(--space-sm) 0 var(--space-md);
+      }
+
+      .view-more-btn {
+        font-size: 0.8125rem;
+      }
+
+      .best-for-tag {
+        font-size: 0.75rem;
+        padding: 0.3rem 0.75rem;
+      }
+
+      .value-badge {
+        top: -14px;
+        left: 50%;
+        transform: translateX(-50%);
+        padding: 0.375rem 0.75rem;
+        font-size: 0.625rem;
+        white-space: nowrap;
+      }
+
+      .service-card:has(.value-badge) {
+        margin-top: 1.5rem;
+      }
+
+      .services-grid {
+        gap: 2rem;
+      }
+
+      /* Massage Collection */
+      .massage-collection {
+        margin-top: 2.5rem;
+        padding: 2rem 1rem;
+      }
+
+      .massage-collection h3 {
+        font-size: clamp(1.5rem, 6vw, 2rem);
+      }
+
+      .massage-collection > p {
+        font-size: clamp(1rem, 3vw, 1.125rem);
+        margin-bottom: var(--space-lg);
+      }
+
+      .massage-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+      }
+
+      .massage-header {
+        padding: 1.5rem 1.25rem;
+      }
+
+      .massage-header h4 {
+        font-size: clamp(1.25rem, 4.5vw, 1.5rem);
+      }
+
+      .massage-duration {
+        font-size: 0.875rem;
+      }
+
+      .massage-price-block {
+        padding: 1.25rem 1rem;
+      }
+
+      .massage-price {
+        font-size: clamp(1.875rem, 6vw, 2.25rem);
+      }
+
+      .massage-description {
+        padding: 1.5rem 1.25rem;
+      }
+
+      .massage-features {
+        padding: 0;
+        margin: var(--space-sm) 0 var(--space-md);
+      }
+
+      .massage-features li {
+        font-size: 0.875rem;
+        padding: 0.4rem 0 0.4rem 1.5rem;
+      }
+
+      .massage-features li::before {
+        width: 5px;
+        height: 5px;
+        top: 0.75rem;
+      }
+
+      .massage-card .best-for-tags {
+        padding: 0 1.25rem;
+        margin: var(--space-sm) 0 var(--space-md);
+      }
+
+      .massage-badge {
+        top: 12px;
+        right: 12px;
+        padding: 0.4rem 0.875rem;
+        font-size: 0.75rem;
+      }
+
+      .massage-card .btn {
+        margin: 0 1.25rem 1.5rem;
+      }
+
+      .massage-description .view-more-btn {
+        font-size: 0.8125rem;
+      }
+
+      /* Comparison Table */
+      .compare-toggle-btn {
+        padding: 0.625rem 1rem;
+        font-size: 0.75rem;
+        gap: 0.375rem;
+        max-width: calc(100% - 2rem);
+        margin-left: auto;
+        margin-right: auto;
+        white-space: nowrap;
+      }
+
+      .compare-toggle-btn svg {
+        width: 14px;
+        height: 14px;
+        flex-shrink: 0;
+      }
+
+      .comparison-table-wrapper {
+        margin: 0 0 var(--space-xl) 0;
+        border-radius: 12px;
+        box-shadow: 0 2px 16px rgba(141, 111, 98, 0.15);
+        background: #FFFFFF;
+      }
+
+      .comparison-table-wrapper::before {
+        content: '← Swipe to see more →';
+        display: block;
+        text-align: center;
+        padding: 0.5rem;
+        font-size: 0.6875rem;
+        color: var(--ha-accent);
+        font-weight: 600;
+        background: rgba(249, 240, 232, 0.5);
+        border-bottom: 1px solid rgba(141, 111, 98, 0.1);
+      }
+
+      .comparison-table {
+        font-size: 0.75rem;
+        min-width: 750px;
+      }
+
+      .comparison-table th {
+        padding: 0.75rem 0.5rem;
+        font-size: 0.625rem;
+        white-space: nowrap;
+      }
+
+      .comparison-table td {
+        padding: 0.625rem 0.5rem;
+        font-size: 0.75rem;
+        line-height: 1.4;
+      }
+
+      .comparison-table .treatment-name {
+        font-size: 0.8125rem;
+        white-space: nowrap;
+      }
+
+      .comparison-table .price-cell {
+        font-size: 0.9375rem;
+        white-space: nowrap;
+      }
+
+      /* Service Tagline */
+      .service-tagline {
+        font-size: 0.875rem;
+        margin-bottom: var(--space-sm);
+      }
+
+      /* Service Features Mobile */
+      .service-features {
+        margin: var(--space-sm) 0 var(--space-md);
+      }
+
+      .service-features li {
+        font-size: 0.8125rem;
+        padding: 0.375rem 0 0.375rem 1.5rem;
+      }
+
+      .service-features li::before {
+        width: 5px;
+        height: 5px;
+        top: 0.675rem;
+      }
+
+      /* Massage Features Mobile */
+      .massage-features {
+        margin: var(--space-sm) 0 var(--space-md);
+      }
+
+      .massage-features li {
+        font-size: 0.8125rem;
+        padding: 0.375rem 0 0.375rem 1.5rem;
+      }
+
+      .massage-features li::before {
+        width: 5px;
+        height: 5px;
+        top: 0.675rem;
+      }
+
+      /* CTA Banner */
+      .cta-banner {
+        padding: 2.5rem 1rem;
+        margin-top: 2.5rem;
+      }
+
+      .cta-banner h2 {
+        font-size: clamp(1.625rem, 6vw, 2rem);
+        margin-bottom: var(--space-sm);
+      }
+
+      .cta-trust {
+        gap: 0.75rem;
+        margin-bottom: var(--space-md);
+      }
+
+      .cta-rating {
+        font-size: 0.9375rem;
+      }
+
+      .cta-stars {
+        font-size: 1rem;
+      }
+
+      .cta-clients {
+        font-size: 0.875rem;
+      }
+
+      .cta-banner p {
+        font-size: clamp(1rem, 3.5vw, 1.125rem);
+        margin-bottom: var(--space-md);
+      }
+
+      .cta-buttons {
+        gap: 0.75rem;
+      }
+
+      .cta-note {
+        font-size: 0.8125rem;
+        margin-top: var(--space-sm);
+      }
+
+      /* FAQ Section */
+      .faq-section {
+        padding: 2.5rem 1rem;
+        margin-top: 2.5rem;
+      }
+
+      .faq-section h3 {
+        font-size: clamp(1.5rem, 6vw, 2rem);
+        margin-bottom: var(--space-lg);
+      }
+
+      .faq-item {
+        padding: 1.25rem;
+        margin-bottom: var(--space-md);
+      }
+
+      .faq-question {
+        font-size: clamp(1rem, 3vw, 1.125rem);
+      }
+
+      .faq-answer {
+        font-size: 0.9375rem;
+      }
+    }
+
+    /* Small Mobile */
+    @media (max-width: 480px) {
+      .trust-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .services-hero h1 {
+        font-size: 1.875rem;
+      }
+
+      .service-card.featured::before {
+        display: none;
+      }
+
+      .category-btn {
+        font-size: 0.75rem;
+        padding: 0.5rem 1rem;
+      }
+
+      .service-price {
+        font-size: 2rem;
+      }
+
+      .massage-price {
+        font-size: 1.75rem;
+      }
+
+      .value-badge {
+        top: -12px;
+        padding: 0.3rem 0.625rem;
+        font-size: 0.5625rem;
+      }
+
+      .service-card:has(.value-badge) {
+        margin-top: 1.25rem;
+      }
+
+      /* Comparison Table - Extra Small */
+      .compare-toggle-btn {
+        font-size: 0.6875rem;
+        padding: 0.5rem 0.75rem;
+        gap: 0.25rem;
+      }
+
+      .compare-toggle-btn svg {
+        width: 12px;
+        height: 12px;
+      }
+
+      .comparison-table-wrapper::before {
+        font-size: 0.625rem;
+        padding: 0.375rem;
+      }
+
+      .comparison-table {
+        min-width: 650px;
+        font-size: 0.6875rem;
+      }
+
+      .comparison-table th {
+        padding: 0.625rem 0.375rem;
+        font-size: 0.5625rem;
+        letter-spacing: 0;
+      }
+
+      .comparison-table td {
+        padding: 0.5rem 0.375rem;
+        font-size: 0.6875rem;
+        line-height: 1.3;
+      }
+
+      .comparison-table .treatment-name {
+        font-size: 0.75rem;
+      }
+
+      .comparison-table .price-cell {
+        font-size: 0.875rem;
+      }
+
+      .service-tagline {
+        font-size: 0.8125rem;
+      }
+
+      .comparison-table .check-icon,
+      .comparison-table .cross-icon {
+        font-size: 1rem;
+      }
+    }
+
+    /* Tablet */
+    @media (min-width: 768px) and (max-width: 1024px) {
+      .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .massage-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .comparison-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .trust-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header & Navigation -->
+  <header class="header">
+    <nav class="nav">
+      <a href="index.html">
+        <img src="images/Logo.png" alt="Amari Head Spa" class="logo" width="150" height="58">
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html" class="active">Services</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="offers.html">Offers</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li>
+          <button class="search-btn" aria-label="Search treatments">
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="11" cy="11" r="8"/>
+              <path d="M21 21l-4.35-4.35"/>
+            </svg>
+          </button>
+        </li>
+        <li><a href="terms.html">T&Cs</a></li>
+        <li><a href="https://www.fresha.com/a/amari-head-spa-london-london-37-high-street-rxtq1qp0/booking?allOffer=true&pId=2565513&cartId=f4708659-8a71-4a86-b41a-c952844d938a" class="btn btn-primary" target="_blank" rel="noopener">Book Now</a></li>
+      </ul>
+      <button class="search-btn-mobile" aria-label="Search treatments">
+        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="11" cy="11" r="8"/>
+          <path d="M21 21l-4.35-4.35"/>
+        </svg>
+      </button>
+      <button class="mobile-menu-btn" aria-label="Toggle menu" aria-expanded="false">
+        <span class="hamburger"></span>
+      </button>
+    </nav>
+  </header>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu">
+    <div class="mobile-menu-header">
+      <h3>Menu</h3>
+      <button class="mobile-menu-close" aria-label="Close menu">×</button>
+    </div>
+
+    <nav class="mobile-menu-nav">
+      <!-- Search Button -->
+      <button class="mobile-menu-search" onclick="openMobileSearch()">
+        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="11" cy="11" r="8"/>
+          <path d="M21 21l-4.35-4.35"/>
+        </svg>
+        Search Treatments
+      </button>
+
+      <!-- Main Links -->
+      <a href="index.html" class="mobile-menu-link">Home</a>
+      <a href="about.html" class="mobile-menu-link">About Us</a>
+
+      <!-- Our Treatments - Collapsible -->
+      <div class="mobile-menu-section">
+        <button class="mobile-menu-section-toggle" onclick="toggleMobileSection('treatments')">
+          <span>Our Treatments</span>
+          <span class="toggle-icon">▼</span>
+        </button>
+        <div class="mobile-menu-subsection" id="mobile-treatments">
+
+          <!-- Head Spa Collection -->
+          <div class="mobile-menu-category">
+            <div class="category-title">Head Spa Collection</div>
+            <a href="treatments/exotic-bliss.html" class="mobile-submenu-link">
+              <span>Exotic Bliss</span>
+              <span class="treatment-price">£85</span>
+            </a>
+            <a href="treatments/exotic-bliss-signature.html" class="mobile-submenu-link">
+              <span>Exotic Bliss Signature</span>
+              <span class="treatment-price">£110</span>
+            </a>
+            <a href="treatments/ultimate-exotic-bliss.html" class="mobile-submenu-link">
+              <span>Ultimate Exotic Bliss</span>
+              <span class="treatment-price">£145</span>
+            </a>
+          </div>
+
+          <!-- Head Spa & Facial Blends -->
+          <div class="mobile-menu-category">
+            <div class="category-title">Spa & Facial Blends</div>
+            <a href="treatments/amari-luxury.html" class="mobile-submenu-link">
+              <span>Amari Luxury</span>
+              <span class="treatment-price">£160</span>
+            </a>
+            <a href="treatments/amari-serenity.html" class="mobile-submenu-link">
+              <span>Amari Serenity</span>
+              <span class="treatment-price">£125</span>
+            </a>
+            <a href="treatments/korean-skincare-ritual.html" class="mobile-submenu-link">
+              <span>Korean Skincare Ritual</span>
+              <span class="treatment-price">£80</span>
+            </a>
+            <a href="treatments/refresh-mini-facial.html" class="mobile-submenu-link">
+              <span>Refresh Mini Facial</span>
+              <span class="treatment-price">£40</span>
+            </a>
+          </div>
+
+          <!-- Head Massage Collection -->
+          <div class="mobile-menu-category">
+            <div class="category-title">Head Massage Collection</div>
+            <a href="treatments/express-massage.html" class="mobile-submenu-link">
+              <span>Express</span>
+              <span class="treatment-price">£45</span>
+            </a>
+            <a href="treatments/ritual-massage.html" class="mobile-submenu-link">
+              <span>Ritual</span>
+              <span class="treatment-price">£60</span>
+            </a>
+            <a href="treatments/deluxe-massage.html" class="mobile-submenu-link">
+              <span>Deluxe</span>
+              <span class="treatment-price">£80</span>
+            </a>
+          </div>
+
+          <!-- Express Fusion Rituals -->
+          <div class="mobile-menu-category">
+            <div class="category-title">Express Fusion Rituals</div>
+            <a href="treatments/amari-harmony.html" class="mobile-submenu-link">
+              <span>Amari Harmony</span>
+              <span class="treatment-price">£125</span>
+            </a>
+            <a href="treatments/back-and-bliss.html" class="mobile-submenu-link">
+              <span>Back & Bliss</span>
+              <span class="treatment-price">£90</span>
+            </a>
+            <a href="treatments/back-and-bliss-advanced.html" class="mobile-submenu-link">
+              <span>Back & Bliss Advanced</span>
+              <span class="treatment-price">£145</span>
+            </a>
+          </div>
+
+          <a href="services.html" class="mobile-view-all-link">Browse All Treatments</a>
+        </div>
+      </div>
+
+      <a href="offers.html" class="mobile-menu-link">Special Offers</a>
+      <a href="contact.html" class="mobile-menu-link">Contact Us</a>
+      <a href="terms.html" class="mobile-menu-link">Terms & Conditions</a>
+    </nav>
+
+    <div class="mobile-menu-footer">
+      <a href="https://www.fresha.com/a/amari-head-spa-london-london-37-high-street-rxtq1qp0/booking?allOffer=true&pId=2565513&cartId=f4708659-8a71-4a86-b41a-c952844d938a" class="btn btn-primary" target="_blank" rel="noopener">Book Appointment</a>
+      <a href="https://wa.me/447442397456?text=Hi%2C%20I%27d%20like%20to%20book%20a%20head%20spa%20treatment" class="btn btn-secondary" target="_blank" rel="noopener">WhatsApp Us</a>
+      <a href="terms.html" class="mobile-menu-terms-link">Terms & Conditions</a>
+    </div>
+  </div>
+
+  <!-- Main Content -->
+  <main>
+    <!-- Services Hero -->
+    <section class="services-hero">
+      <div class="services-hero-content">
+        <h1>AMARI Head Spa Collection</h1>
+        <p>An indulgent sanctuary where beauty, balance, and serenity meet</p>
+        <div style="display: flex; gap: var(--space-md); justify-content: center; flex-wrap: wrap; margin-top: var(--space-xl);">
+          <a href="https://www.fresha.com/a/amari-head-spa-london-london-37-high-street-rxtq1qp0/booking?allOffer=true&pId=2565513&cartId=f4708659-8a71-4a86-b41a-c952844d938a" class="btn btn-primary" target="_blank" rel="noopener">Book Your Treatment</a>
+          <a href="https://www.fresha.com/a/amari-head-spa-london-london-37-high-street-rxtq1qp0/gift-cards?menu=true&pId=2565513" class="btn btn-secondary" target="_blank" rel="noopener">Gift Vouchers</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Trust Indicators -->
+    <section class="trust-indicators fade-in">
+      <div class="trust-grid">
+        <div class="trust-stat">
+          <div class="trust-number">500+</div>
+          <div class="trust-label">Happy Clients</div>
+        </div>
+        <div class="trust-stat">
+          <div class="trust-number">4.9★</div>
+          <div class="trust-label">Average Rating</div>
+        </div>
+        <div class="trust-stat">
+          <div class="trust-number">8</div>
+          <div class="trust-label">Signature Treatments</div>
+        </div>
+        <div class="trust-stat">
+          <div class="trust-number">100%</div>
+          <div class="trust-label">Natural Products</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Promotional Banner -->
+    <section style="background: linear-gradient(135deg, var(--ha-accent) 0%, var(--ha-primary) 100%); padding: clamp(2rem, 5vw, 3rem) clamp(1rem, 3vw, 2rem); margin: 0;">
+      <div style="max-width: 800px; margin: 0 auto; text-align: center;">
+        <div class="fade-in">
+          <h2 style="color: var(--text-light); font-size: clamp(1.75rem, 4vw, 2.5rem); margin-bottom: var(--space-md); font-weight: 800;">
+            ✨ Enjoy 10% Off All Head Spa Treatments ✨
+          </h2>
+          <p style="color: rgba(255, 255, 255, 0.95); font-size: clamp(1.125rem, 2.5vw, 1.375rem); line-height: 1.8; margin-bottom: var(--space-sm);">
+            Indulge in the ultimate relaxation experience at<br>
+            <strong style="font-size: clamp(1.25rem, 2.75vw, 1.5rem);">Amari Head Spa.</strong>
+          </p>
+          <p style="color: rgba(255, 255, 255, 0.95); font-size: clamp(1rem, 2.25vw, 1.25rem); line-height: 1.8;">
+            For a limited time, enjoy<br>
+            <strong style="font-size: clamp(1.375rem, 3vw, 1.75rem); color: var(--ha-light);">10% off all head spa treatments at checkout.</strong>
+          </p>
+          <div style="margin-top: var(--space-xl);">
+            <a href="https://www.fresha.com/a/amari-head-spa-london-london-37-high-street-rxtq1qp0/booking?allOffer=true&pId=2565513&cartId=f4708659-8a71-4a86-b41a-c952844d938a" class="btn" style="background: var(--text-light); color: var(--ha-accent); border: 2px solid var(--text-light); font-weight: 700; padding: clamp(1rem, 2.5vw, 1.25rem) clamp(2rem, 4vw, 3rem);" target="_blank" rel="noopener">Book Now & Save 10%</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Category Filters -->
+    <section class="service-categories fade-in">
+      <div class="category-filters">
+        <button class="category-btn active" data-category="all">All Treatments</button>
+        <button class="category-btn" data-category="signature">Signature Spa</button>
+        <button class="category-btn" data-category="combo">Spa + Facial</button>
+        <button class="category-btn" data-category="quick">Quick Refresh</button>
+      </div>
+    </section>
+
+    <!-- Services Grid -->
+    <section>
+      <div class="section-inner">
+        <h2 class="section-title fade-in">Our Treatments</h2>
+        <p class="section-lead fade-in">All treatments include aromatherapy, scalp analysis, personalized products, vegan options, and rough dry styling</p>
+        <button class="compare-toggle-btn" id="compareToggle">
+          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" width="18" height="18">
+            <path d="M3 3H21M3 9H21M3 15H21M3 21H21" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+          Compare All Treatments
+        </button>
+
+        <div class="comparison-table-wrapper" id="comparisonTable">
+          <table class="comparison-table">
+            <thead>
+              <tr>
+                <th>Treatment</th>
+                <th>Duration</th>
+                <th>Price</th>
+                <th>Best For</th>
+                <th>Includes Facial</th>
+                <th>Type</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="treatment-name">Exotic Bliss</td>
+                <td>60 min</td>
+                <td class="price-cell">£85</td>
+                <td>First-timers, Stress Relief</td>
+                <td class="cross-icon">✕</td>
+                <td>Signature Spa</td>
+              </tr>
+              <tr>
+                <td class="treatment-name">Exotic Bliss Signature</td>
+                <td>90 min</td>
+                <td class="price-cell">£110</td>
+                <td>Deep Relaxation, Extended Care</td>
+                <td class="cross-icon">✕</td>
+                <td>Signature Spa</td>
+              </tr>
+              <tr>
+                <td class="treatment-name">Ultimate Exotic Bliss</td>
+                <td>90 min</td>
+                <td class="price-cell">£145</td>
+                <td>Special Occasions, Complete Renewal</td>
+                <td class="check-icon">✓</td>
+                <td>Signature Spa</td>
+              </tr>
+              <tr>
+                <td class="treatment-name">Serenity</td>
+                <td>90 min</td>
+                <td class="price-cell">£125</td>
+                <td>Spa + Facial, Skin Glow</td>
+                <td class="check-icon">✓</td>
+                <td>Spa + Facial</td>
+              </tr>
+              <tr>
+                <td class="treatment-name">Luxury</td>
+                <td>120 min</td>
+                <td class="price-cell">£160</td>
+                <td>Ultimate Indulgence, VIP Experience</td>
+                <td class="check-icon">✓</td>
+                <td>Spa + Facial</td>
+              </tr>
+              <tr>
+                <td class="treatment-name">Back & Bliss</td>
+                <td>60 min</td>
+                <td class="price-cell">£90</td>
+                <td>Tension Relief, Desk Workers</td>
+                <td class="cross-icon">✕</td>
+                <td>Signature Spa</td>
+              </tr>
+              <tr>
+                <td class="treatment-name">Dual Radiance</td>
+                <td>60 min</td>
+                <td class="price-cell">£80</td>
+                <td>Hair + Face, Quick Glow</td>
+                <td class="check-icon">✓</td>
+                <td>Spa + Facial</td>
+              </tr>
+              <tr>
+                <td class="treatment-name">Asian Hair Wash</td>
+                <td>30 min</td>
+                <td class="price-cell">£40</td>
+                <td>Quick Refresh, Lunch Break</td>
+                <td class="cross-icon">✕</td>
+                <td>Quick Refresh</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="services-grid">
+
+          <!-- Exotic Bliss -->
+          <article class="service-card scale-in" id="exotic-bliss" data-category="signature">
+            <div class="service-header">
+              <h3>Exotic Bliss</h3>
+              <p class="service-duration">60 Minutes</p>
+            </div>
+            <div class="service-price">£85</div>
+            <div class="best-for-tags">
+              <span class="best-for-tag">First Timers</span>
+              <span class="best-for-tag">Stress Relief</span>
+              <span class="best-for-tag">Hair Growth</span>
+            </div>
+            <div class="service-description">
+              <p class="service-tagline">Your introduction to luxury head spa</p>
+              <ul class="service-features">
+                <li>Traditional Japanese & Thai massage techniques</li>
+                <li>Extended shoulder & arm massage</li>
+                <li>Hair growth scalp treatment</li>
+              </ul>
+            </div>
+
+            <!-- View Details Link -->
+            <a href="treatments/exotic-bliss.html" class="learn-more-btn">
+              <span class="learn-more-text">View Full Details</span>
+              <span class="learn-more-icon">→</span>
+            </a>
+
+            <a href="https://www.fresha.com/a/amari-head-spa-london-london-37-high-street-rxtq1qp0/booking?allOffer=true&pId=2565513&cartId=f4708659-8a71-4a86-b41a-c952844d938a" class="btn btn-primary" target="_blank" rel="noopener">Book Exotic Bliss</a>
+          </article>
+
+          <!-- Exotic Bliss Signature -->
+          <article class="service-card scale-in" id="exotic-bliss-signature" data-category="signature">
+            <div class="service-header">
+              <h3>Exotic Bliss Signature</h3>
+              <p class="service-duration">90 Minutes</p>
+            </div>
+            <div class="service-price">£110</div>
+            <div class="best-for-tags">
+              <span class="best-for-tag">Deep Relaxation</span>
+              <span class="best-for-tag">Extended Care</span>
+            </div>
+            <div class="service-description">
+              <p class="service-tagline">Extended relaxation for deeper restoration</p>
+              <ul class="service-features">
+                <li>30 minutes additional massage time</li>
+                <li>Intensive deep conditioning treatment</li>
+                <li>Extended pressure point therapy</li>
+              </ul>
+            </div>
+
+            <!-- View Details Link -->
+            <a href="treatments/exotic-bliss-signature.html" class="learn-more-btn">
+              <span class="learn-more-text">View Full Details</span>
+              <span class="learn-more-icon">→</span>
+            </a>
+
+            <a href="https://www.fresha.com/a/amari-head-spa-london-london-37-high-street-rxtq1qp0/booking?allOffer=true&pId=2565513&cartId=f4708659-8a71-4a86-b41a-c952844d938a" class="btn btn-primary" target="_blank" rel="noopener">Book Exotic Bliss Signature</a>
+          </article>
+
+          <!-- Ultimate Exotic Bliss -->
+          <article class="service-card scale-in featured" id="ultimate-exotic-bliss" data-category="signature">
+            <div class="service-header">
+              <h3>Ultimate Exotic Bliss</h3>
+              <p class="service-duration">1.5 Hours</p>
+            </div>
+            <div class="service-price">£145</div>
+            <div class="best-for-tags">
+              <span class="best-for-tag">Special Occasion</span>
+              <span class="best-for-tag">Complete Renewal</span>
+              <span class="best-for-tag">Anti-Aging</span>
+            </div>
+            <div class="service-description">
+              <p class="service-tagline">The complete head spa experience</p>
+              <ul class="service-features">
+                <li>Facial massage & acupressure included</li>
+                <li>Premium luxury products throughout</li>
+                <li>Ultimate full-body relaxation journey</li>
+              </ul>
+            </div>
+
+            <!-- View Details Link -->
+            <a href="treatments/ultimate-exotic-bliss.html" class="learn-more-btn">
+              <span class="learn-more-text">View Full Details</span>
+              <span class="learn-more-icon">→</span>
+            </a>
+
+            <a href="https://www.fresha.com/a/amari-head-spa-london-london-37-high-street-rxtq1qp0/booking?allOffer=true&pId=2565513&cartId=f4708659-8a71-4a86-b41a-c952844d938a" class="btn btn-primary" target="_blank" rel="noopener">Book Ultimate Exotic Bliss</a>
+          </article>
+
+          <!-- Serenity -->
+          <article class="service-card scale-in" id="serenity" data-category="combo">
+            <div class="service-header">
+              <h3>Serenity</h3>
+              <p class="service-duration">1.5 Hours</p>
+            </div>
+            <div class="service-price">£125</div>
+            <div class="best-for-tags">
+              <span class="best-for-tag">Spa + Facial</span>
+              <span class="best-for-tag">Skin Glow</span>
+              <span class="best-for-tag">Total Wellness</span>
+            </div>
+            <div class="service-description">
+              <p class="service-tagline">Head spa meets Korean skincare</p>
+              <ul class="service-features">
+                <li>Korean skincare mini facial included</li>
+                <li>Dual scalp & skin rejuvenation</li>
+                <li>Perfect harmony treatment</li>
+              </ul>
+            </div>
+
+            <!-- View Details Link -->
+            <a href="treatments/amari-serenity.html" class="learn-more-btn">
+              <span class="learn-more-text">View Full Details</span>
+              <span class="learn-more-icon">→</span>
+            </a>
+
+            <a href="https://www.fresha.com/a/amari-head-spa-london-london-37-high-street-rxtq1qp0/booking?allOffer=true&pId=2565513&cartId=f4708659-8a71-4a86-b41a-c952844d938a" class="btn btn-primary" target="_blank" rel="noopener">Book Serenity</a>
+          </article>
+
+          <!-- Luxury -->
+          <article class="service-card scale-in" id="luxury" data-category="combo">
+            <div class="service-header">
+              <h3>Luxury</h3>
+              <p class="service-duration">2 Hours</p>
+            </div>
+            <div class="service-price">£160</div>
+            <div class="best-for-tags">
+              <span class="best-for-tag">Ultimate Indulgence</span>
+              <span class="best-for-tag">Full Transformation</span>
+              <span class="best-for-tag">VIP Experience</span>
+            </div>
+            <div class="service-description">
+              <p class="service-tagline">The ultimate sanctuary experience</p>
+              <ul class="service-features">
+                <li>Full Korean facial treatment included</li>
+                <li>2-hour complete transformation</li>
+                <li>VIP luxury indulgence</li>
+              </ul>
+            </div>
+
+            <!-- View Details Link -->
+            <a href="treatments/amari-luxury.html" class="learn-more-btn">
+              <span class="learn-more-text">View Full Details</span>
+              <span class="learn-more-icon">→</span>
+            </a>
+
+            <a href="https://www.fresha.com/a/amari-head-spa-london-london-37-high-street-rxtq1qp0/booking?allOffer=true&pId=2565513&cartId=f4708659-8a71-4a86-b41a-c952844d938a" class="btn btn-primary" target="_blank" rel="noopener">Book Luxury</a>
+          </article>
+
+          <!-- Back & Bliss -->
+          <article class="service-card scale-in" id="back-bliss" data-category="signature">
+            <div class="service-header">
+              <h3>Back & Bliss</h3>
+              <p class="service-duration">1 Hour</p>
+            </div>
+            <div class="service-price">£90</div>
+            <div class="best-for-tags">
+              <span class="best-for-tag">Tension Relief</span>
+              <span class="best-for-tag">Back Pain</span>
+              <span class="best-for-tag">Desk Workers</span>
+            </div>
+            <div class="service-description">
+              <p class="service-tagline">Release tension from head to shoulders</p>
+              <ul class="service-features">
+                <li>Aromatherapy back & shoulder massage</li>
+                <li>Deep tension relief therapy</li>
+                <li>Perfect for desk workers</li>
+              </ul>
+            </div>
+
+            <!-- View Details Link -->
+            <a href="treatments/back-and-bliss.html" class="learn-more-btn">
+              <span class="learn-more-text">View Full Details</span>
+              <span class="learn-more-icon">→</span>
+            </a>
+
+            <a href="https://www.fresha.com/a/amari-head-spa-london-london-37-high-street-rxtq1qp0/booking?allOffer=true&pId=2565513&cartId=f4708659-8a71-4a86-b41a-c952844d938a" class="btn btn-primary" target="_blank" rel="noopener">Book Back & Bliss</a>
+          </article>
+
+          <!-- Dual Radiance -->
+          <article class="service-card scale-in" id="dual-radiance" data-category="combo">
+            <div class="service-header">
+              <h3>Dual Radiance</h3>
+              <p class="service-duration">1 Hour</p>
+            </div>
+            <div class="service-price">£80</div>
+            <div class="best-for-tags">
+              <span class="best-for-tag">Hair + Face</span>
+              <span class="best-for-tag">Quick Glow</span>
+              <span class="best-for-tag">Balanced Care</span>
+            </div>
+            <div class="service-description">
+              <p class="service-tagline">Double the glow in one session</p>
+              <ul class="service-features">
+                <li>Hair & facial combination</li>
+                <li>Quick balanced care in 60 minutes</li>
+                <li>Time-efficient pampering</li>
+              </ul>
+            </div>
+            <a href="https://www.fresha.com/a/amari-head-spa-london-london-37-high-street-rxtq1qp0/booking?allOffer=true&pId=2565513&cartId=f4708659-8a71-4a86-b41a-c952844d938a" class="btn btn-primary" target="_blank" rel="noopener">Book Dual Radiance</a>
+          </article>
+
+          <!-- Asian Hair Wash -->
+          <article class="service-card scale-in" id="asian-hair-wash" data-category="quick">
+            <div class="service-header">
+              <h3>Asian Hair Wash</h3>
+              <p class="service-duration">30 Minutes</p>
+            </div>
+            <div class="service-price">£40</div>
+            <div class="best-for-tags">
+              <span class="best-for-tag">Quick Refresh</span>
+              <span class="best-for-tag">Lunch Break</span>
+              <span class="best-for-tag">Scalp Cleanse</span>
+            </div>
+            <div class="service-description">
+              <p class="service-tagline">Traditional cleansing and revitalization</p>
+              <ul class="service-features">
+                <li>Authentic Asian hair washing ritual</li>
+                <li>Perfect lunch break treatment</li>
+                <li>30-minute quick refresh</li>
+              </ul>
+            </div>
+            <a href="https://www.fresha.com/a/amari-head-spa-london-london-37-high-street-rxtq1qp0/booking?allOffer=true&pId=2565513&cartId=f4708659-8a71-4a86-b41a-c952844d938a" class="btn btn-primary" target="_blank" rel="noopener">Book Asian Hair Wash</a>
+          </article>
+
+        </div>
+
+        <button class="view-more-treatments-btn" id="viewMoreTreatments">View More Treatments</button>
+
+        <!-- Head Massage Collection -->
+        <div class="massage-collection">
+          <h3>Head Massage Collection</h3>
+          <p>Choose your perfect level of relaxation with our dedicated head massage services.</p>
+          <div class="massage-grid">
+
+            <!-- Express -->
+            <article class="massage-card scale-in" id="express-massage" data-category="quick">
+              <div class="massage-header">
+                <h4>Express</h4>
+                <p class="massage-duration">30 Minutes</p>
+              </div>
+              <div class="massage-price">£45</div>
+              <div class="best-for-tags">
+                <span class="best-for-tag">Quick Refresh</span>
+                <span class="best-for-tag">Lunch Break</span>
+                <span class="best-for-tag">Tension Relief</span>
+              </div>
+              <div class="massage-description">
+                <p class="service-tagline">Quick stress relief on the go</p>
+                <ul class="massage-features">
+                  <li>30-minute focused head massage</li>
+                  <li>Pressure point therapy</li>
+                  <li>Instant tension release</li>
+                </ul>
+              </div>
+
+              <!-- View Details Link -->
+              <a href="treatments/express-massage.html" class="learn-more-btn">
+                <span class="learn-more-text">View Full Details</span>
+                <span class="learn-more-icon">→</span>
+              </a>
+
+              <a href="https://www.fresha.com/a/amari-head-spa-london-london-37-high-street-rxtq1qp0/booking?allOffer=true&pId=2565513&cartId=f4708659-8a71-4a86-b41a-c952844d938a" class="btn btn-primary" target="_blank" rel="noopener">Book Express</a>
+            </article>
+
+            <!-- Ritual -->
+            <article class="massage-card scale-in" id="ritual-massage" data-category="quick">
+              <span class="massage-badge">Most Popular</span>
+              <div class="massage-header">
+                <h4>Ritual</h4>
+                <p class="massage-duration">45 Minutes</p>
+              </div>
+              <div class="massage-price">£60</div>
+              <div class="best-for-tags">
+                <span class="best-for-tag">Deep Relief</span>
+                <span class="best-for-tag">Stress Recovery</span>
+                <span class="best-for-tag">Balance</span>
+              </div>
+              <div class="massage-description">
+                <p class="service-tagline">Balanced traditional massage therapy</p>
+                <ul class="massage-features">
+                  <li>Traditional Asian massage techniques</li>
+                  <li>45-minute deep relaxation</li>
+                  <li>Aromatherapy enhancement</li>
+                </ul>
+              </div>
+
+              <!-- View Details Link -->
+              <a href="treatments/ritual-massage.html" class="learn-more-btn">
+                <span class="learn-more-text">View Full Details</span>
+                <span class="learn-more-icon">→</span>
+              </a>
+
+              <a href="https://www.fresha.com/a/amari-head-spa-london-london-37-high-street-rxtq1qp0/booking?allOffer=true&pId=2565513&cartId=f4708659-8a71-4a86-b41a-c952844d938a" class="btn btn-primary" target="_blank" rel="noopener">Book Ritual</a>
+            </article>
+
+            <!-- Deluxe -->
+            <article class="massage-card scale-in" id="deluxe-massage" data-category="quick">
+              <div class="massage-header">
+                <h4>Deluxe</h4>
+                <p class="massage-duration">60 Minutes</p>
+              </div>
+              <div class="massage-price">£80</div>
+              <div class="best-for-tags">
+                <span class="best-for-tag">Ultimate Indulgence</span>
+                <span class="best-for-tag">Complete Renewal</span>
+                <span class="best-for-tag">Deep Healing</span>
+              </div>
+              <div class="massage-description">
+                <p class="service-tagline">Complete head massage indulgence</p>
+                <ul class="massage-features">
+                  <li>Facial massage & acupressure included</li>
+                  <li>Full hour premium treatment</li>
+                  <li>Complete mind-body restoration</li>
+                </ul>
+              </div>
+
+              <!-- View Details Link -->
+              <a href="treatments/deluxe-massage.html" class="learn-more-btn">
+                <span class="learn-more-text">View Full Details</span>
+                <span class="learn-more-icon">→</span>
+              </a>
+
+              <a href="https://www.fresha.com/a/amari-head-spa-london-london-37-high-street-rxtq1qp0/booking?allOffer=true&pId=2565513&cartId=f4708659-8a71-4a86-b41a-c952844d938a" class="btn btn-primary" target="_blank" rel="noopener">Book Deluxe</a>
+            </article>
+
+          </div>
+        </div>
+
+        <!-- CTA Banner -->
+        <div class="cta-banner fade-in">
+          <h2>Begin Your Wellness Journey Today</h2>
+          <div class="cta-trust">
+            <div class="cta-rating">
+              <span class="cta-stars">★★★★★</span>
+              <span>4.9/5</span>
+            </div>
+            <div class="cta-divider"></div>
+            <div class="cta-clients">Trusted by 500+ Happy Clients</div>
+          </div>
+          <p>Experience the transformative power of luxury head spa treatments. Book your appointment now and enjoy instant relaxation in our tranquil London sanctuary.</p>
+          <div class="cta-buttons">
+            <a href="https://www.fresha.com/a/amari-head-spa-london-london-37-high-street-rxtq1qp0/booking?allOffer=true&pId=2565513&cartId=f4708659-8a71-4a86-b41a-c952844d938a" class="btn btn-primary" target="_blank" rel="noopener">Book Your Treatment</a>
+            <a href="https://wa.me/447442397456?text=Hi%2C%20I%27d%20like%20to%20book%20a%20head%20spa%20treatment" class="btn btn-whatsapp" target="_blank" rel="noopener">WhatsApp Us</a>
+          </div>
+          <div class="cta-note">
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M9 12L11 14L15 10M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <span>Same-day appointments available</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+      <h3>Frequently Asked Questions</h3>
+      <div class="faq-container">
+        <div class="faq-item fade-in">
+          <div class="faq-question">What should I expect during my first visit?</div>
+          <div class="faq-answer">Your first visit begins with a personalized consultation and scalp analysis. Our expert therapists will assess your hair and scalp condition, discuss your concerns, and recommend the perfect treatment for your needs. You'll then enjoy a luxurious, relaxing experience in our tranquil spa environment.</div>
+        </div>
+        <div class="faq-item fade-in">
+          <div class="faq-question">How often should I get a head spa treatment?</div>
+          <div class="faq-answer">For optimal results, we recommend treatments every 2-4 weeks. However, the frequency depends on your individual scalp health, hair goals, and lifestyle. Some clients prefer weekly sessions for intensive care, while others visit monthly for maintenance.</div>
+        </div>
+        <div class="faq-item fade-in">
+          <div class="faq-question">Can I get a head spa treatment if I have sensitive skin or allergies?</div>
+          <div class="faq-answer">Absolutely! We offer vegan options and can customize treatments for sensitive skin. Please inform us of any allergies or skin sensitivities during your consultation, and we'll select products specifically suited to your needs.</div>
+        </div>
+        <div class="faq-item fade-in">
+          <div class="faq-question">Will my hair be professionally styled after the treatment?</div>
+          <div class="faq-answer">All treatments include a rough dry (towel and gentle blow dry to remove excess moisture), but not a professional blow dry or styling. If you'd like professional styling, please let us know when booking and we can arrange this as an additional service.</div>
+        </div>
+        <div class="faq-item fade-in">
+          <div class="faq-question">What's the difference between the Exotic Bliss treatments?</div>
+          <div class="faq-answer">Exotic Bliss (60min) is our signature treatment perfect for first-timers. Exotic Bliss Signature (90min) offers extended massage time and more intensive conditioning. Ultimate Exotic Bliss (1.5hrs) adds facial massage and acupressure for the most comprehensive experience.</div>
+        </div>
+        <div class="faq-item fade-in">
+          <div class="faq-question">Can men enjoy head spa treatments?</div>
+          <div class="faq-answer">Yes! Head spa treatments are beneficial for everyone, regardless of gender or hair length. Many of our male clients love the stress-relief and scalp health benefits. All treatments can be customized to suit individual needs and preferences.</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Terms & Conditions Banner -->
+    <section class="content-section" style="padding-top: 0;">
+      <div class="terms-banner">
+        <h3 class="terms-banner-title">
+          <span>📋</span>
+          Important Booking Information
+        </h3>
+        <p class="terms-banner-content">
+          Before booking your treatment, please familiarise yourself with our booking policies.
+          We require 24-hour notice for cancellations and ask that you arrive 5-10 minutes early to ensure you receive your full treatment time.
+        </p>
+        <div class="terms-banner-highlights">
+          <span class="terms-banner-item">
+            <span>📅</span> 24hr Cancellation Policy
+          </span>
+          <span class="terms-banner-item">
+            <span>⏰</span> Arrive 5-10 mins Early
+          </span>
+          <span class="terms-banner-item">
+            <span>💳</span> Payment at Service
+          </span>
+          <span class="terms-banner-item">
+            <span>⚕️</span> Inform Us of Allergies
+          </span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-section">
+        <img src="images/Logo.png" alt="Amari Head Spa" class="footer-logo" width="140" height="68" loading="lazy" decoding="async">
+        <p>Luxury head spa treatments in the heart of London</p>
+        <div class="social-links" aria-label="Social media and contact links">
+          <a href="https://www.instagram.com/amariheadspalondon?igsh=dDNxenNoY21qNG96" aria-label="Instagram" target="_blank" rel="noopener" title="Follow us on Instagram">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
+              <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+            </svg>
+          </a>
+          <a href="https://www.tiktok.com/@amari_headspa?_t=ZN-8yWSyv8sjNW&_r=1" aria-label="TikTok" target="_blank" rel="noopener" title="Follow us on TikTok">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
+              <path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-5.2 1.74 2.89 2.89 0 012.31-4.64 2.93 2.93 0 01.88.13V9.4a6.84 6.84 0 00-1-.05A6.33 6.33 0 005 20.1a6.34 6.34 0 0010.86-4.43v-7a8.16 8.16 0 004.77 1.52v-3.4a4.85 4.85 0 01-1-.1z"/>
+            </svg>
+          </a>
+          <a href="https://wa.me/447442397456?text=Hi%2C%20I%27d%20like%20to%20book%20a%20head%20spa%20treatment" aria-label="WhatsApp" target="_blank" rel="noopener" title="Message us on WhatsApp">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
+              <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L0 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+            </svg>
+          </a>
+          <a href="tel:+447442397456" aria-label="Call us" title="Call us">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
+              <path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56a.977.977 0 00-1.01.24l-1.57 1.97c-2.83-1.35-5.48-3.9-6.89-6.83l1.95-1.66c.27-.28.35-.67.24-1.02-.37-1.11-.56-2.3-.56-3.53 0-.54-.45-.99-.99-.99H4.19C3.65 3 3 3.24 3 3.99 3 13.28 10.73 21 20.01 21c.71 0 .99-.63.99-1.18v-3.45c0-.54-.45-.99-.99-.99z"/>
+            </svg>
+          </a>
+          <a href="https://www.fresha.com/a/amari-head-spa-london-london-37-high-street-rxtq1qp0/booking?allOffer=true&pId=2565513&cartId=f4708659-8a71-4a86-b41a-c952844d938a" aria-label="Book online" target="_blank" rel="noopener" title="Book online">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
+              <path d="M19 4h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V10h14v10zM9 14H7v-2h2v2zm4 0h-2v-2h2v2zm4 0h-2v-2h2v2zm-8 4H7v-2h2v2zm4 0h-2v-2h2v2zm4 0h-2v-2h2v2z"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+      <div class="footer-section">
+        <h3>Quick Links</h3>
+        <p>
+          <a href="services.html">Our Services</a><br>
+          <a href="about.html">About Us</a><br>
+          <a href="offers.html">Special Offers</a><br>
+          <a href="contact.html">Contact</a><br>
+          <a href="terms.html">Terms & Conditions</a>
+        </p>
+      </div>
+      <div class="footer-section">
+        <h3>Visit Us</h3>
+        <p>37 High St<br>London, SE20 7HJ<br>4 min walk from Penge Station</p>
+      </div>
+      <div class="footer-section">
+        <h3>Contact</h3>
+        <p>
+          <a href="tel:+447442397456">07442 397456</a><br>
+          <a href="https://wa.me/447442397456" target="_blank" rel="noopener">WhatsApp: 07442 397456</a><br>
+          Monday–Sunday: 10 am–7 pm
+        </p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 Amari Head Spa. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp Button -->
+  <a href="https://wa.me/447442397456?text=Hi%2C%20I%27d%20like%20to%20book%20a%20head%20spa%20treatment" class="floating-whatsapp-btn" target="_blank" rel="noopener" aria-label="WhatsApp Us">
+    <svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L0 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+    </svg>
+  </a>
+
+  <!-- Scripts -->
+  <script>
+    // Mobile Menu Toggle
+    const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+    const mobileMenu = document.querySelector('.mobile-menu');
+    const mobileMenuClose = document.querySelector('.mobile-menu-close');
+    let overlay = document.querySelector('.mobile-menu-overlay');
+
+    // Create overlay if it doesn't exist
+    if (!overlay) {
+      overlay = document.createElement('div');
+      overlay.className = 'mobile-menu-overlay';
+      document.body.appendChild(overlay);
+    }
+
+    // Open menu
+    mobileMenuBtn.addEventListener('click', () => {
+      mobileMenuBtn.classList.add('active');
+      mobileMenu.classList.add('active');
+      overlay.classList.add('active');
+      mobileMenuBtn.setAttribute('aria-expanded', 'true');
+      document.body.style.overflow = 'hidden';
+    });
+
+    // Close menu function
+    function closeMobileMenu() {
+      mobileMenuBtn.classList.remove('active');
+      mobileMenu.classList.remove('active');
+      overlay.classList.remove('active');
+      mobileMenuBtn.setAttribute('aria-expanded', 'false');
+      document.body.style.overflow = '';
+    }
+
+    // Close button
+    if (mobileMenuClose) {
+      mobileMenuClose.addEventListener('click', closeMobileMenu);
+    }
+
+    // Close when clicking overlay
+    overlay.addEventListener('click', closeMobileMenu);
+
+    // Close when clicking a link
+    document.querySelectorAll('.mobile-menu a').forEach(link => {
+      link.addEventListener('click', closeMobileMenu);
+    });
+
+    // Toggle subsection
+    function toggleMobileSection(sectionId) {
+      const subsection = document.getElementById(`mobile-${sectionId}`);
+      const toggle = event.currentTarget;
+
+      if (subsection && toggle) {
+        subsection.classList.toggle('active');
+        toggle.classList.toggle('active');
+      }
+    }
+
+    // Scroll Animations
+    const observerOptions = {
+      threshold: 0.1,
+      rootMargin: '0px 0px -50px 0px'
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, observerOptions);
+
+    document.querySelectorAll('.fade-in, .scale-in').forEach(el => {
+      observer.observe(el);
+    });
+
+    // Category Filtering
+    const categoryButtons = document.querySelectorAll('.category-btn');
+    const serviceCards = document.querySelectorAll('.service-card, .massage-card');
+
+    categoryButtons.forEach(button => {
+      button.addEventListener('click', () => {
+        // Remove active class from all buttons
+        categoryButtons.forEach(btn => btn.classList.remove('active'));
+        // Add active class to clicked button
+        button.classList.add('active');
+
+        const category = button.getAttribute('data-category');
+
+        // Filter service cards and massage cards
+        serviceCards.forEach(card => {
+          const cardCategory = card.getAttribute('data-category');
+
+          if (category === 'all') {
+            card.style.display = '';
+            card.style.opacity = '1';
+          } else {
+            if (cardCategory === category) {
+              card.style.display = '';
+              card.style.opacity = '1';
+            } else {
+              card.style.display = 'none';
+              card.style.opacity = '0';
+            }
+          }
+        });
+
+        // Scroll to services section
+        document.querySelector('.services-grid').scrollIntoView({ behavior: 'smooth', block: 'start' });
+      });
+    });
+
+    // FAQ Accordion
+    const faqItems = document.querySelectorAll('.faq-item');
+
+    faqItems.forEach(item => {
+      const question = item.querySelector('.faq-question');
+
+      question.addEventListener('click', () => {
+        // Close all other FAQ items
+        faqItems.forEach(otherItem => {
+          if (otherItem !== item) {
+            otherItem.classList.remove('active');
+          }
+        });
+
+        // Toggle current item
+        item.classList.toggle('active');
+      });
+    });
+
+    // Open first FAQ by default
+    if (faqItems.length > 0) {
+      faqItems[0].classList.add('active');
+    }
+
+    // Comparison Table Toggle
+    const compareToggle = document.getElementById('compareToggle');
+    const comparisonTable = document.getElementById('comparisonTable');
+    const servicesGrid = document.querySelector('.services-grid');
+
+    if (compareToggle && comparisonTable && servicesGrid) {
+      compareToggle.addEventListener('click', function() {
+        // Toggle active states
+        this.classList.toggle('active');
+        comparisonTable.classList.toggle('active');
+        servicesGrid.classList.toggle('table-mode');
+
+        // Update button text
+        if (comparisonTable.classList.contains('active')) {
+          this.innerHTML = `
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" width="18" height="18">
+              <path d="M3 3H7M3 9H7M3 15H7M3 21H7M13 3H21M13 9H21M13 15H21M13 21H21" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+            View as Cards
+          `;
+          // Scroll to table
+          comparisonTable.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        } else {
+          this.innerHTML = `
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" width="18" height="18">
+              <path d="M3 3H21M3 9H21M3 15H21M3 21H21" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+            Compare All Treatments
+          `;
+        }
+      });
+    }
+
+    // View More Treatments functionality (mobile only)
+    const viewMoreTreatmentsBtn = document.getElementById('viewMoreTreatments');
+
+    if (viewMoreTreatmentsBtn && servicesGrid) {
+      // Initialize on mobile
+      function initTreatmentsToggle() {
+        if (window.innerWidth <= 767) {
+          servicesGrid.classList.add('show-limited');
+        } else {
+          servicesGrid.classList.remove('show-limited');
+        }
+      }
+
+      // Run on load
+      initTreatmentsToggle();
+
+      // Run on resize
+      window.addEventListener('resize', initTreatmentsToggle);
+
+      // Toggle on button click
+      viewMoreTreatmentsBtn.addEventListener('click', function() {
+        if (servicesGrid.classList.contains('show-limited')) {
+          servicesGrid.classList.remove('show-limited');
+          this.textContent = 'View Less Treatments';
+        } else {
+          servicesGrid.classList.add('show-limited');
+          this.textContent = 'View More Treatments';
+          // Scroll back to top of services grid
+          servicesGrid.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      });
+    }
+  </script>
+
+  <!-- Search Modal -->
+  <div class="search-modal-overlay"></div>
+  <div class="search-modal">
+    <div class="search-modal-header">
+      <div class="search-input-wrapper">
+        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="11" cy="11" r="8"/>
+          <path d="M21 21l-4.35-4.35"/>
+        </svg>
+        <input type="text" class="search-input" placeholder="Search treatments... (e.g., head spa, facial, massage)">
+      </div>
+      <button class="search-close-btn" aria-label="Close search">
+        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M18 6L6 18M6 6l12 12"/>
+        </svg>
+      </button>
+    </div>
+    <div class="search-filters">
+      <div class="filter-group">
+        <span class="filter-label">Price</span>
+        <div class="filter-options">
+          <button class="filter-btn active" data-filter-type="price" data-filter-value="all">All</button>
+          <button class="filter-btn" data-filter-type="price" data-filter-value="under50">Under £50</button>
+          <button class="filter-btn" data-filter-type="price" data-filter-value="50-100">£50-£100</button>
+          <button class="filter-btn" data-filter-type="price" data-filter-value="over100">£100+</button>
+        </div>
+      </div>
+      <div class="filter-group">
+        <span class="filter-label">Duration</span>
+        <div class="filter-options">
+          <button class="filter-btn active" data-filter-type="duration" data-filter-value="all">All</button>
+          <button class="filter-btn" data-filter-type="duration" data-filter-value="30">30 min</button>
+          <button class="filter-btn" data-filter-type="duration" data-filter-value="60">45-60 min</button>
+          <button class="filter-btn" data-filter-type="duration" data-filter-value="90plus">75+ min</button>
+        </div>
+      </div>
+      <div class="filter-group">
+        <span class="filter-label">Type</span>
+        <div class="filter-options">
+          <button class="filter-btn active" data-filter-type="category" data-filter-value="all">All</button>
+          <button class="filter-btn" data-filter-type="category" data-filter-value="head-spa">Head Spa</button>
+          <button class="filter-btn" data-filter-type="category" data-filter-value="facial">Facial</button>
+          <button class="filter-btn" data-filter-type="category" data-filter-value="massage">Massage</button>
+          <button class="filter-btn" data-filter-type="category" data-filter-value="fusion">Fusion</button>
+        </div>
+      </div>
+    </div>
+    <div class="search-results"></div>
+    <div class="search-quick-links">
+      <span class="search-quick-links-title">Popular Searches</span>
+      <div class="search-quick-links-list">
+        <a href="treatments/ultimate-exotic-bliss.html" class="quick-link">Ultimate Exotic Bliss</a>
+        <a href="treatments/korean-skincare-ritual.html" class="quick-link">Korean Skincare</a>
+        <a href="treatments/express-massage.html" class="quick-link">Express Massage</a>
+        <a href="services.html" class="quick-link">View All Services</a>
+      </div>
+    </div>
+  </div>
+  <script src="js/search-treatments.js"></script>
+</body>
+</html>

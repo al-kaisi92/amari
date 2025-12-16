@@ -1,0 +1,1003 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#8D6F62">
+  <title>Special Offers - Amari Head Spa London | Exclusive Deals & Packages</title>
+  <meta name="description" content="Discover exclusive special offers, packages, and gift vouchers at Amari Head Spa London. First-time visitor deals and seasonal promotions on luxury head spa treatments.">
+  <meta name="keywords" content="spa offers London, head spa deals, gift vouchers spa, first visit discount, spa packages London, couples massage deals, wellness membership">
+  <link rel="canonical" href="https://www.amariheadspa.co.uk/offers.html">
+  <link rel="icon" type="image/png" href="images/Logo.png">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Special Offers - Amari Head Spa London">
+  <meta property="og:description" content="Exclusive special offers, packages, and gift vouchers for luxury head spa treatments in London.">
+  <meta property="og:image" content="https://www.amariheadspa.co.uk/images/new.jpeg">
+  <meta property="og:url" content="https://www.amariheadspa.co.uk/offers.html">
+  <meta property="og:type" content="website">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Special Offers - Amari Head Spa London">
+  <meta name="twitter:description" content="Exclusive special offers and packages for luxury head spa treatments.">
+  <meta name="twitter:image" content="https://www.amariheadspa.co.uk/images/new.jpeg">
+
+  <!-- Shared Styles -->
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- JSON-LD Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "OffersPage",
+    "mainEntity": {
+      "@type": "HealthAndBeautyBusiness",
+      "name": "Amari Head Spa",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "37 High St",
+        "addressLocality": "London",
+        "addressRegion": "Greater London",
+        "postalCode": "SE20 7HJ"
+      }
+    }
+  }
+  </script>
+
+  <style>
+    /* Offers Page Styles */
+    .offers-hero {
+      background: linear-gradient(135deg, var(--ha-primary) 0%, var(--ha-accent) 100%);
+      color: var(--text-light);
+      padding: clamp(4rem, 10vw, 8rem) clamp(1rem, 3vw, 2rem) clamp(3rem, 6vw, 5rem);
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .offers-hero::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: url('images/new.jpeg') center/cover;
+      opacity: 0.15;
+      z-index: 0;
+    }
+
+    .offers-hero-content {
+      position: relative;
+      z-index: 1;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .offers-hero h1 {
+      color: var(--text-light);
+      margin-bottom: var(--space-md);
+    }
+
+    .offers-hero p {
+      font-size: clamp(1.125rem, 2.5vw, 1.375rem);
+      opacity: 0.95;
+      line-height: 1.8;
+    }
+
+    .offers-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(min(100%, 360px), 1fr));
+      gap: clamp(2rem, 4vw, 2.5rem);
+    }
+
+    .offer-card {
+      background: white;
+      border-radius: var(--radius-lg);
+      padding: 0;
+      box-shadow: 0 4px 20px rgba(83, 71, 62, 0.12);
+      transition: all var(--transition);
+      border: 2px solid var(--ha-accent);
+      overflow: hidden;
+      position: relative;
+    }
+
+    .offer-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 16px 48px rgba(83, 71, 62, 0.2);
+    }
+
+    .offer-badge {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      background: var(--ha-accent);
+      color: var(--text-light);
+      padding: 0.5rem 1rem;
+      border-radius: var(--radius-full);
+      font-size: 0.875rem;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+      z-index: 2;
+      box-shadow: 0 4px 12px rgba(155, 94, 68, 0.3);
+    }
+
+    .offer-header {
+      background: linear-gradient(135deg, var(--ha-primary) 0%, var(--ha-accent) 100%);
+      color: var(--text-light);
+      padding: clamp(2rem, 4vw, 3rem);
+      text-align: center;
+      position: relative;
+    }
+
+    .offer-header h3 {
+      color: var(--text-light);
+      font-size: clamp(1.5rem, 3vw, 2rem);
+      margin-bottom: var(--space-sm);
+    }
+
+    .offer-subtitle {
+      font-size: clamp(1rem, 2vw, 1.125rem);
+      opacity: 0.95;
+      margin-bottom: var(--space-md);
+    }
+
+    .offer-price {
+      font-size: clamp(2.5rem, 5vw, 3.5rem);
+      font-weight: 800;
+      margin-bottom: var(--space-xs);
+      line-height: 1;
+    }
+
+    .offer-original-price {
+      font-size: clamp(1.25rem, 2.5vw, 1.5rem);
+      text-decoration: line-through;
+      opacity: 0.7;
+      margin-bottom: var(--space-sm);
+    }
+
+    .offer-savings {
+      display: inline-block;
+      background: rgba(255, 255, 255, 0.2);
+      padding: 0.5rem 1rem;
+      border-radius: var(--radius-full);
+      font-size: clamp(0.875rem, 1.75vw, 1rem);
+      font-weight: 600;
+    }
+
+    .offer-body {
+      padding: clamp(2rem, 4vw, 2.5rem);
+    }
+
+    .offer-description {
+      color: var(--text-dark);
+      line-height: 1.7;
+      margin-bottom: var(--space-lg);
+    }
+
+    .offer-features {
+      list-style: none;
+      padding: 0;
+      margin: 0 0 var(--space-xl) 0;
+    }
+
+    .offer-features li {
+      padding: var(--space-sm) 0 var(--space-sm) 2rem;
+      position: relative;
+      line-height: 1.6;
+      color: var(--text-dark);
+      border-bottom: 1px solid var(--ha-light);
+    }
+
+    .offer-features li:last-child {
+      border-bottom: none;
+    }
+
+    .offer-features li::before {
+      content: '✓';
+      position: absolute;
+      left: 0;
+      color: var(--ha-accent);
+      font-weight: 700;
+      font-size: 1.25rem;
+    }
+
+    .offer-terms {
+      background: var(--ha-light);
+      padding: var(--space-md);
+      border-radius: var(--radius-md);
+      margin-bottom: var(--space-lg);
+      font-size: 0.875rem;
+      color: var(--text-dark);
+      line-height: 1.6;
+    }
+
+    .offer-terms strong {
+      color: var(--ha-accent);
+    }
+
+    .gift-voucher-section {
+      background: linear-gradient(135deg, var(--ha-light) 0%, rgba(249, 240, 232, 0.5) 100%);
+      padding: clamp(3rem, 6vw, 5rem);
+      border-radius: var(--radius-lg);
+      margin-top: clamp(3rem, 6vw, 5rem);
+      border: 2px solid var(--ha-secondary);
+      text-align: center;
+    }
+
+    .gift-voucher-section h2 {
+      color: var(--ha-primary);
+      margin-bottom: var(--space-md);
+    }
+
+    .gift-voucher-content {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .gift-voucher-content p {
+      font-size: clamp(1.0625rem, 2.25vw, 1.1875rem);
+      line-height: 1.8;
+      margin-bottom: var(--space-lg);
+      color: var(--text-dark);
+    }
+
+    .gift-options {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(min(100%, 200px), 1fr));
+      gap: var(--space-lg);
+      margin: var(--space-2xl) 0;
+    }
+
+    .gift-option {
+      background: white;
+      padding: clamp(1.5rem, 3vw, 2rem);
+      border-radius: var(--radius-lg);
+      box-shadow: 0 2px 12px rgba(83, 71, 62, 0.08);
+      border: 2px solid transparent;
+      transition: all var(--transition);
+    }
+
+    .gift-option:hover {
+      border-color: var(--ha-accent);
+      transform: translateY(-4px);
+      box-shadow: 0 8px 24px rgba(83, 71, 62, 0.15);
+    }
+
+    .gift-option-price {
+      font-size: clamp(1.75rem, 3.5vw, 2.25rem);
+      font-weight: 800;
+      color: var(--ha-accent);
+      margin-bottom: var(--space-xs);
+    }
+
+    .gift-option-label {
+      color: var(--ha-primary);
+      font-weight: 600;
+      font-size: clamp(0.9375rem, 2vw, 1rem);
+    }
+
+    .newsletter-section {
+      background: white;
+      padding: clamp(2.5rem, 5vw, 4rem);
+      border-radius: var(--radius-lg);
+      box-shadow: 0 4px 20px rgba(83, 71, 62, 0.08);
+      margin-top: clamp(3rem, 6vw, 5rem);
+      text-align: center;
+    }
+
+    .newsletter-section h3 {
+      color: var(--ha-primary);
+      font-size: clamp(1.5rem, 3vw, 2rem);
+      margin-bottom: var(--space-md);
+    }
+
+    .newsletter-section p {
+      max-width: 600px;
+      margin: 0 auto var(--space-xl);
+      color: var(--text-dark);
+    }
+
+    .newsletter-form {
+      display: flex;
+      gap: var(--space-md);
+      max-width: 500px;
+      margin: 0 auto;
+      flex-wrap: wrap;
+    }
+
+    .newsletter-form input {
+      flex: 1;
+      min-width: 250px;
+      padding: clamp(0.875rem, 2vw, 1rem);
+      border: 2px solid rgba(141, 111, 98, 0.2);
+      border-radius: var(--radius-md);
+      font-size: clamp(0.9375rem, 2vw, 1rem);
+      font-family: inherit;
+      transition: all var(--transition);
+    }
+
+    .newsletter-form input:focus {
+      outline: none;
+      border-color: var(--ha-accent);
+      box-shadow: 0 0 0 3px rgba(155, 94, 68, 0.1);
+    }
+
+    .cta-banner {
+      background: linear-gradient(135deg, var(--ha-primary) 0%, var(--ha-accent) 100%);
+      color: var(--text-light);
+      text-align: center;
+      padding: clamp(3rem, 8vw, 5rem) clamp(1rem, 3vw, 2rem);
+      border-radius: var(--radius-lg);
+      margin-top: clamp(3rem, 6vw, 5rem);
+    }
+
+    .cta-banner h2 {
+      color: var(--text-light);
+      margin-bottom: var(--space-md);
+    }
+
+    .cta-banner p {
+      font-size: clamp(1.125rem, 2.5vw, 1.375rem);
+      margin-bottom: var(--space-xl);
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+      opacity: 0.95;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header & Navigation -->
+  <header class="header">
+    <nav class="nav">
+      <a href="index.html">
+        <img src="images/Logo.png" alt="Amari Head Spa" class="logo" width="150" height="58">
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="offers.html" class="active">Offers</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li>
+          <button class="search-btn" aria-label="Search treatments">
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="11" cy="11" r="8"/>
+              <path d="M21 21l-4.35-4.35"/>
+            </svg>
+          </button>
+        </li>
+        <li><a href="terms.html">T&Cs</a></li>
+        <li><a href="https://www.fresha.com/a/amari-head-spa-london-london-37-high-street-rxtq1qp0/booking?allOffer=true&pId=2565513&cartId=f4708659-8a71-4a86-b41a-c952844d938a" class="btn btn-primary" target="_blank" rel="noopener">Book Now</a></li>
+      </ul>
+      <button class="search-btn-mobile" aria-label="Search treatments">
+        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="11" cy="11" r="8"/>
+          <path d="M21 21l-4.35-4.35"/>
+        </svg>
+      </button>
+      <button class="mobile-menu-btn" aria-label="Toggle menu" aria-expanded="false">
+        <span class="hamburger"></span>
+      </button>
+    </nav>
+  </header>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu">
+    <div class="mobile-menu-header">
+      <h3>Menu</h3>
+      <button class="mobile-menu-close" aria-label="Close menu">×</button>
+    </div>
+
+    <nav class="mobile-menu-nav">
+      <!-- Search Button -->
+      <button class="mobile-menu-search" onclick="openMobileSearch()">
+        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="11" cy="11" r="8"/>
+          <path d="M21 21l-4.35-4.35"/>
+        </svg>
+        Search Treatments
+      </button>
+
+      <!-- Main Links -->
+      <a href="index.html" class="mobile-menu-link">Home</a>
+      <a href="about.html" class="mobile-menu-link">About Us</a>
+
+      <!-- Our Treatments - Collapsible -->
+      <div class="mobile-menu-section">
+        <button class="mobile-menu-section-toggle" onclick="toggleMobileSection('treatments')">
+          <span>Our Treatments</span>
+          <span class="toggle-icon">▼</span>
+        </button>
+        <div class="mobile-menu-subsection" id="mobile-treatments">
+
+          <!-- Head Spa Collection -->
+          <div class="mobile-menu-category">
+            <div class="category-title">Head Spa Collection</div>
+            <a href="treatments/exotic-bliss.html" class="mobile-submenu-link">
+              <span>Exotic Bliss</span>
+              <span class="treatment-price">£85</span>
+            </a>
+            <a href="treatments/exotic-bliss-signature.html" class="mobile-submenu-link">
+              <span>Exotic Bliss Signature</span>
+              <span class="treatment-price">£110</span>
+            </a>
+            <a href="treatments/ultimate-exotic-bliss.html" class="mobile-submenu-link">
+              <span>Ultimate Exotic Bliss</span>
+              <span class="treatment-price">£145</span>
+            </a>
+          </div>
+
+          <!-- Head Spa & Facial Blends -->
+          <div class="mobile-menu-category">
+            <div class="category-title">Spa & Facial Blends</div>
+            <a href="treatments/amari-luxury.html" class="mobile-submenu-link">
+              <span>Amari Luxury</span>
+              <span class="treatment-price">£160</span>
+            </a>
+            <a href="treatments/amari-serenity.html" class="mobile-submenu-link">
+              <span>Amari Serenity</span>
+              <span class="treatment-price">£125</span>
+            </a>
+            <a href="treatments/korean-skincare-ritual.html" class="mobile-submenu-link">
+              <span>Korean Skincare Ritual</span>
+              <span class="treatment-price">£80</span>
+            </a>
+            <a href="treatments/refresh-mini-facial.html" class="mobile-submenu-link">
+              <span>Refresh Mini Facial</span>
+              <span class="treatment-price">£40</span>
+            </a>
+          </div>
+
+          <!-- Head Massage Collection -->
+          <div class="mobile-menu-category">
+            <div class="category-title">Head Massage Collection</div>
+            <a href="treatments/express-massage.html" class="mobile-submenu-link">
+              <span>Express</span>
+              <span class="treatment-price">£45</span>
+            </a>
+            <a href="treatments/ritual-massage.html" class="mobile-submenu-link">
+              <span>Ritual</span>
+              <span class="treatment-price">£60</span>
+            </a>
+            <a href="treatments/deluxe-massage.html" class="mobile-submenu-link">
+              <span>Deluxe</span>
+              <span class="treatment-price">£80</span>
+            </a>
+          </div>
+
+          <!-- Express Fusion Rituals -->
+          <div class="mobile-menu-category">
+            <div class="category-title">Express Fusion Rituals</div>
+            <a href="treatments/amari-harmony.html" class="mobile-submenu-link">
+              <span>Amari Harmony</span>
+              <span class="treatment-price">£125</span>
+            </a>
+            <a href="treatments/back-and-bliss.html" class="mobile-submenu-link">
+              <span>Back & Bliss</span>
+              <span class="treatment-price">£90</span>
+            </a>
+            <a href="treatments/back-and-bliss-advanced.html" class="mobile-submenu-link">
+              <span>Back & Bliss Advanced</span>
+              <span class="treatment-price">£145</span>
+            </a>
+          </div>
+
+          <a href="services.html" class="mobile-view-all-link">Browse All Treatments</a>
+        </div>
+      </div>
+
+      <a href="offers.html" class="mobile-menu-link">Special Offers</a>
+      <a href="contact.html" class="mobile-menu-link">Contact Us</a>
+      <a href="terms.html" class="mobile-menu-link">Terms & Conditions</a>
+    </nav>
+
+    <div class="mobile-menu-footer">
+      <a href="https://www.fresha.com/a/amari-head-spa-london-london-37-high-street-rxtq1qp0/booking?allOffer=true&pId=2565513&cartId=f4708659-8a71-4a86-b41a-c952844d938a" class="btn btn-primary" target="_blank" rel="noopener">Book Appointment</a>
+      <a href="https://wa.me/447442397456?text=Hi%2C%20I%27d%20like%20to%20book%20a%20head%20spa%20treatment" class="btn btn-secondary" target="_blank" rel="noopener">WhatsApp Us</a>
+      <a href="terms.html" class="mobile-menu-terms-link">Terms & Conditions</a>
+    </div>
+  </div>
+
+  <!-- Main Content -->
+  <main>
+    <!-- Offers Hero -->
+    <section class="offers-hero">
+      <div class="offers-hero-content">
+        <h1>Special Offers & Packages</h1>
+        <p>Discover exclusive deals and savings on our luxury head spa treatments. Treat yourself or give the gift of wellness to someone special.</p>
+      </div>
+    </section>
+
+    <!-- Special Offers -->
+    <section style="background: white;">
+      <div class="section-inner">
+        <h2 class="section-title fade-in">Current Special Offers</h2>
+        <p class="section-lead fade-in">Limited time promotions to help you experience the ultimate in relaxation</p>
+
+        <div class="offers-grid">
+
+          <!-- First Visit Offer -->
+          <article class="offer-card scale-in">
+            <div class="offer-badge">New Client</div>
+            <div class="offer-header">
+              <h3>First Visit Special</h3>
+              <p class="offer-subtitle">Welcome to Amari Head Spa</p>
+              <div class="offer-price">£75</div>
+              <div class="offer-original-price">£85</div>
+              <div class="offer-savings">Save £10</div>
+            </div>
+            <div class="offer-body">
+              <p class="offer-description">Experience the magic of our signature Exotic Bliss treatment at a special introductory price. Perfect for first-time visitors who want to discover what makes Amari Head Spa special.</p>
+
+              <ul class="offer-features">
+                <li>Full 60-minute Exotic Bliss treatment</li>
+                <li>Personalized scalp & hair analysis</li>
+                <li>Aromatherapy introduction</li>
+                <li>Premium hair conditioning mask</li>
+                <li>Expert scalp, neck, shoulder & arm massage</li>
+              </ul>
+
+              <div class="offer-terms">
+                <strong>Terms:</strong> Valid for first-time clients only. Must mention offer when booking. Cannot be combined with other promotions.
+              </div>
+
+              <a href="https://www.fresha.com/a/amari-head-spa-london-london-37-high-street-rxtq1qp0/booking?allOffer=true&pId=2565513&cartId=f4708659-8a71-4a86-b41a-c952844d938a" class="btn btn-primary" style="width: 100%; text-align: center;" target="_blank" rel="noopener">Claim This Offer</a>
+            </div>
+          </article>
+
+          <!-- Couples Package -->
+          <article class="offer-card scale-in">
+            <div class="offer-badge">Popular</div>
+            <div class="offer-header">
+              <h3>Couples Retreat</h3>
+              <p class="offer-subtitle">Share the Experience</p>
+              <div class="offer-price">£155</div>
+              <div class="offer-original-price">£170</div>
+              <div class="offer-savings">Save £15</div>
+            </div>
+            <div class="offer-body">
+              <p class="offer-description">Enjoy a relaxing head spa experience together. Book two Exotic Bliss treatments simultaneously and save. Perfect for couples, friends, or family members.</p>
+
+              <ul class="offer-features">
+                <li>Two Exotic Bliss treatments (60 mins each)</li>
+                <li>Side-by-side or back-to-back sessions</li>
+                <li>Complimentary herbal tea</li>
+                <li>Personalized treatment for each guest</li>
+                <li>Special couples ambiance</li>
+              </ul>
+
+              <div class="offer-terms">
+                <strong>Terms:</strong> Both treatments must be booked for the same day. Subject to availability. Advance booking recommended.
+              </div>
+
+              <a href="https://www.fresha.com/a/amari-head-spa-london-london-37-high-street-rxtq1qp0/booking?allOffer=true&pId=2565513&cartId=f4708659-8a71-4a86-b41a-c952844d938a" class="btn btn-primary" style="width: 100%; text-align: center;" target="_blank" rel="noopener">Book Couples Package</a>
+            </div>
+          </article>
+
+          <!-- Monthly Membership -->
+          <article class="offer-card scale-in">
+            <div class="offer-badge">Best Value</div>
+            <div class="offer-header">
+              <h3>Wellness Membership</h3>
+              <p class="offer-subtitle">Monthly Self-Care</p>
+              <div class="offer-price">£200</div>
+              <div class="offer-subtitle" style="margin-top: var(--space-sm);">per month</div>
+              <div class="offer-savings">Up to 30% Savings</div>
+            </div>
+            <div class="offer-body">
+              <p class="offer-description">Make head spa therapy part of your regular wellness routine. Enjoy exclusive member benefits and substantial savings on monthly treatments.</p>
+
+              <ul class="offer-features">
+                <li>3 treatments per month (any service up to £80 value)</li>
+                <li>15% discount on additional treatments</li>
+                <li>Priority booking privileges</li>
+                <li>Exclusive member-only promotions</li>
+                <li>Birthday month special gift</li>
+                <li>Flexible scheduling options</li>
+              </ul>
+
+              <div class="offer-terms">
+                <strong>Terms:</strong> 3-month minimum commitment. Unused treatments don't roll over. Can be paused once per year for up to 1 month.
+              </div>
+
+              <a href="contact.html" class="btn btn-primary" style="width: 100%; text-align: center;">Inquire About Membership</a>
+            </div>
+          </article>
+
+          <!-- Seasonal Package -->
+          <article class="offer-card scale-in">
+            <div class="offer-badge">Limited Time</div>
+            <div class="offer-header">
+              <h3>Ultimate Relaxation Package</h3>
+              <p class="offer-subtitle">Complete Transformation</p>
+              <div class="offer-price">£280</div>
+              <div class="offer-original-price">£325</div>
+              <div class="offer-savings">Save £45</div>
+            </div>
+            <div class="offer-body">
+              <p class="offer-description">Indulge in the ultimate wellness journey with our comprehensive package combining multiple premium treatments for complete rejuvenation.</p>
+
+              <ul class="offer-features">
+                <li>1x Ultimate Exotic Bliss (£145 value)</li>
+                <li>1x Serenity treatment (£125 value)</li>
+                <li>1x Express Head Massage (£45 value)</li>
+                <li>Complimentary aromatherapy consultation</li>
+                <li>Take-home scalp care kit</li>
+              </ul>
+
+              <div class="offer-terms">
+                <strong>Terms:</strong> All treatments must be used within 3 months of purchase. Non-transferable. Cannot be combined with other offers.
+              </div>
+
+              <a href="https://www.fresha.com/a/amari-head-spa-london-london-37-high-street-rxtq1qp0/booking?allOffer=true&pId=2565513&cartId=f4708659-8a71-4a86-b41a-c952844d938a" class="btn btn-primary" style="width: 100%; text-align: center;" target="_blank" rel="noopener">Book This Package</a>
+            </div>
+          </article>
+
+          <!-- Referral Offer -->
+          <article class="offer-card scale-in">
+            <div class="offer-badge">Share & Save</div>
+            <div class="offer-header">
+              <h3>Refer a Friend</h3>
+              <p class="offer-subtitle">Everyone Saves</p>
+              <div class="offer-price">£15 Off</div>
+              <div class="offer-subtitle" style="margin-top: var(--space-sm);">for you & your friend</div>
+            </div>
+            <div class="offer-body">
+              <p class="offer-description">Love Amari Head Spa? Share the experience! When you refer a friend who books their first treatment, you both receive £15 off your next visit.</p>
+
+              <ul class="offer-features">
+                <li>£15 credit for you</li>
+                <li>£15 discount for your friend</li>
+                <li>Unlimited referrals</li>
+                <li>Credits never expire</li>
+                <li>Easy to share via email or social media</li>
+              </ul>
+
+              <div class="offer-terms">
+                <strong>Terms:</strong> Friend must be a new client. Credit applied after their first completed treatment. Minimum £60 treatment value required.
+              </div>
+
+              <a href="contact.html" class="btn btn-primary" style="width: 100%; text-align: center;">Get Your Referral Code</a>
+            </div>
+          </article>
+
+          <!-- Off-Peak Special -->
+          <article class="offer-card scale-in">
+            <div class="offer-badge">Weekday</div>
+            <div class="offer-header">
+              <h3>Midweek Escape</h3>
+              <p class="offer-subtitle">Monday - Thursday Special</p>
+              <div class="offer-price">£95</div>
+              <div class="offer-original-price">£110</div>
+              <div class="offer-savings">Save £15</div>
+            </div>
+            <div class="offer-body">
+              <p class="offer-description">Beat the midweek blues with our special weekday offer. Enjoy our extended Exotic Bliss Signature treatment at a reduced rate when you book Monday through Thursday before 3 PM.</p>
+
+              <ul class="offer-features">
+                <li>Full 90-minute Exotic Bliss Signature</li>
+                <li>Extended massage and relaxation time</li>
+                <li>Intensive hair conditioning</li>
+                <li>Monday - Thursday, before 3 PM</li>
+                <li>All the luxury, lower price</li>
+              </ul>
+
+              <div class="offer-terms">
+                <strong>Terms:</strong> Valid Monday-Thursday, appointments before 3 PM only. Subject to availability. Must book in advance.
+              </div>
+
+              <a href="https://www.fresha.com/a/amari-head-spa-london-london-37-high-street-rxtq1qp0/booking?allOffer=true&pId=2565513&cartId=f4708659-8a71-4a86-b41a-c952844d938a" class="btn btn-primary" style="width: 100%; text-align: center;" target="_blank" rel="noopener">Book Weekday Escape</a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Gift Vouchers -->
+    <section style="background: var(--ha-light);">
+      <div class="section-inner">
+        <div class="gift-voucher-section fade-in">
+          <div class="gift-voucher-content">
+            <h2>Gift Vouchers</h2>
+            <p>Give the gift of relaxation and wellness. Our beautifully presented gift vouchers are perfect for birthdays, anniversaries, holidays, or any special occasion. Available in any denomination or for specific treatments.</p>
+
+            <div class="gift-options">
+              <div class="gift-option">
+                <div class="gift-option-price">£50</div>
+                <div class="gift-option-label">Starter Gift</div>
+              </div>
+              <div class="gift-option">
+                <div class="gift-option-price">£85</div>
+                <div class="gift-option-label">Exotic Bliss</div>
+              </div>
+              <div class="gift-option">
+                <div class="gift-option-price">£125</div>
+                <div class="gift-option-label">Serenity</div>
+              </div>
+              <div class="gift-option">
+                <div class="gift-option-price">£145</div>
+                <div class="gift-option-label">Ultimate Bliss</div>
+              </div>
+            </div>
+
+            <div style="background: white; padding: clamp(2rem, 4vw, 2.5rem); border-radius: var(--radius-lg); margin-top: var(--space-2xl);">
+              <h3 style="color: var(--ha-accent); margin-bottom: var(--space-md);">How Gift Vouchers Work</h3>
+              <ul style="text-align: left; list-style: none; padding: 0; margin: 0; display: grid; gap: var(--space-md);">
+                <li style="padding-left: 2rem; position: relative;">
+                  <span style="position: absolute; left: 0; color: var(--ha-accent); font-weight: 700; font-size: 1.125rem;">✓</span>
+                  Choose any amount or specific treatment
+                </li>
+                <li style="padding-left: 2rem; position: relative;">
+                  <span style="position: absolute; left: 0; color: var(--ha-accent); font-weight: 700; font-size: 1.125rem;">✓</span>
+                  Receive beautifully presented voucher by email or post
+                </li>
+                <li style="padding-left: 2rem; position: relative;">
+                  <span style="position: absolute; left: 0; color: var(--ha-accent); font-weight: 700; font-size: 1.125rem;">✓</span>
+                  Valid for 12 months from purchase date
+                </li>
+                <li style="padding-left: 2rem; position: relative;">
+                  <span style="position: absolute; left: 0; color: var(--ha-accent); font-weight: 700; font-size: 1.125rem;">✓</span>
+                  Can be used for any of our services
+                </li>
+                <li style="padding-left: 2rem; position: relative;">
+                  <span style="position: absolute; left: 0; color: var(--ha-accent); font-weight: 700; font-size: 1.125rem;">✓</span>
+                  Personal message included at no extra charge
+                </li>
+              </ul>
+            </div>
+
+            <div style="margin-top: var(--space-2xl);">
+              <a href="https://www.fresha.com/a/amari-head-spa-london-london-37-high-street-rxtq1qp0/gift-cards?menu=true&pId=2565513" class="btn btn-primary" style="margin-right: var(--space-md);" target="_blank" rel="noopener">Purchase Gift Voucher</a>
+              <a href="tel:+447442397456" class="btn btn-secondary">Call to Order</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Newsletter Signup -->
+    <section style="background: white;">
+      <div class="section-inner">
+        <div class="newsletter-section fade-in">
+          <h3>Stay Updated on Exclusive Offers</h3>
+          <p>Join our mailing list to receive exclusive offers, seasonal promotions, wellness tips, and be the first to know about new treatments and special events.</p>
+
+          <form class="newsletter-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+            <input type="email" name="email" placeholder="Enter your email address" required>
+            <button type="submit" class="btn btn-primary">Subscribe</button>
+          </form>
+
+          <p style="margin-top: var(--space-md); font-size: 0.875rem; color: var(--ha-secondary);">
+            We respect your privacy. Unsubscribe anytime. No spam, just wellness.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Banner -->
+    <section style="background: var(--ha-light);">
+      <div class="section-inner">
+        <div class="cta-banner fade-in">
+          <h2>Ready to Book Your Treatment?</h2>
+          <p>Don't miss out on these exclusive offers. Book now and experience the transformative power of Amari Head Spa.</p>
+          <div style="display: flex; gap: var(--space-md); justify-content: center; flex-wrap: wrap;">
+            <a href="https://www.fresha.com/a/amari-head-spa-london-london-37-high-street-rxtq1qp0/booking?allOffer=true&pId=2565513&cartId=f4708659-8a71-4a86-b41a-c952844d938a" class="btn btn-primary" target="_blank" rel="noopener">Book Online Now</a>
+            <a href="services.html" class="btn btn-secondary">View All Services</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-section">
+        <img src="images/Logo.png" alt="Amari Head Spa" class="footer-logo" width="140" height="68" loading="lazy" decoding="async">
+        <p>Luxury head spa treatments in the heart of London</p>
+        <div class="social-links" aria-label="Social media and contact links">
+          <a href="https://www.instagram.com/amariheadspalondon?igsh=dDNxenNoY21qNG96" aria-label="Instagram" target="_blank" rel="noopener" title="Follow us on Instagram">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
+              <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+            </svg>
+          </a>
+          <a href="https://www.tiktok.com/@amari_headspa?_t=ZN-8yWSyv8sjNW&_r=1" aria-label="TikTok" target="_blank" rel="noopener" title="Follow us on TikTok">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
+              <path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-5.2 1.74 2.89 2.89 0 012.31-4.64 2.93 2.93 0 01.88.13V9.4a6.84 6.84 0 00-1-.05A6.33 6.33 0 005 20.1a6.34 6.34 0 0010.86-4.43v-7a8.16 8.16 0 004.77 1.52v-3.4a4.85 4.85 0 01-1-.1z"/>
+            </svg>
+          </a>
+          <a href="https://wa.me/447442397456?text=Hi%2C%20I%27d%20like%20to%20book%20a%20head%20spa%20treatment" aria-label="WhatsApp" target="_blank" rel="noopener" title="Message us on WhatsApp">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
+              <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L0 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+            </svg>
+          </a>
+          <a href="tel:+447442397456" aria-label="Call us" title="Call us">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
+              <path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56a.977.977 0 00-1.01.24l-1.57 1.97c-2.83-1.35-5.48-3.9-6.89-6.83l1.95-1.66c.27-.28.35-.67.24-1.02-.37-1.11-.56-2.3-.56-3.53 0-.54-.45-.99-.99-.99H4.19C3.65 3 3 3.24 3 3.99 3 13.28 10.73 21 20.01 21c.71 0 .99-.63.99-1.18v-3.45c0-.54-.45-.99-.99-.99z"/>
+            </svg>
+          </a>
+          <a href="https://www.fresha.com/a/amari-head-spa-london-london-37-high-street-rxtq1qp0/booking?allOffer=true&pId=2565513&cartId=f4708659-8a71-4a86-b41a-c952844d938a" aria-label="Book online" target="_blank" rel="noopener" title="Book online">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
+              <path d="M19 4h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V10h14v10zM9 14H7v-2h2v2zm4 0h-2v-2h2v2zm4 0h-2v-2h2v2zm-8 4H7v-2h2v2zm4 0h-2v-2h2v2zm4 0h-2v-2h2v2z"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+      <div class="footer-section">
+        <h3>Quick Links</h3>
+        <p>
+          <a href="services.html">Our Services</a><br>
+          <a href="about.html">About Us</a><br>
+          <a href="offers.html">Special Offers</a><br>
+          <a href="contact.html">Contact</a><br>
+          <a href="terms.html">Terms & Conditions</a>
+        </p>
+      </div>
+      <div class="footer-section">
+        <h3>Visit Us</h3>
+        <p>37 High St<br>London, SE20 7HJ<br>4 min walk from Penge Station</p>
+      </div>
+      <div class="footer-section">
+        <h3>Contact</h3>
+        <p>
+          <a href="tel:+447442397456">07442 397456</a><br>
+          <a href="https://wa.me/447442397456" target="_blank" rel="noopener">WhatsApp: 07442 397456</a><br>
+          Monday–Sunday: 10 am–7 pm
+        </p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 Amari Head Spa. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp Button -->
+  <a href="https://wa.me/447442397456?text=Hi%2C%20I%27d%20like%20to%20book%20a%20head%20spa%20treatment" class="floating-whatsapp-btn" target="_blank" rel="noopener" aria-label="WhatsApp Us">
+    <svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L0 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+    </svg>
+  </a>
+
+  <!-- Scripts -->
+  <script>
+    // Mobile Menu Toggle
+    const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+    const mobileMenu = document.querySelector('.mobile-menu');
+    const mobileMenuClose = document.querySelector('.mobile-menu-close');
+    let overlay = document.querySelector('.mobile-menu-overlay');
+
+    // Create overlay if it doesn't exist
+    if (!overlay) {
+      overlay = document.createElement('div');
+      overlay.className = 'mobile-menu-overlay';
+      document.body.appendChild(overlay);
+    }
+
+    // Open menu
+    mobileMenuBtn.addEventListener('click', () => {
+      mobileMenuBtn.classList.add('active');
+      mobileMenu.classList.add('active');
+      overlay.classList.add('active');
+      mobileMenuBtn.setAttribute('aria-expanded', 'true');
+      document.body.style.overflow = 'hidden';
+    });
+
+    // Close menu function
+    function closeMobileMenu() {
+      mobileMenuBtn.classList.remove('active');
+      mobileMenu.classList.remove('active');
+      overlay.classList.remove('active');
+      mobileMenuBtn.setAttribute('aria-expanded', 'false');
+      document.body.style.overflow = '';
+    }
+
+    // Close button
+    if (mobileMenuClose) {
+      mobileMenuClose.addEventListener('click', closeMobileMenu);
+    }
+
+    // Close when clicking overlay
+    overlay.addEventListener('click', closeMobileMenu);
+
+    // Close when clicking a link
+    document.querySelectorAll('.mobile-menu a').forEach(link => {
+      link.addEventListener('click', closeMobileMenu);
+    });
+
+    // Toggle subsection
+    function toggleMobileSection(sectionId) {
+      const subsection = document.getElementById(`mobile-${sectionId}`);
+      const toggle = event.currentTarget;
+
+      if (subsection && toggle) {
+        subsection.classList.toggle('active');
+        toggle.classList.toggle('active');
+      }
+    }
+
+    // Scroll Animations
+    const observerOptions = {
+      threshold: 0.1,
+      rootMargin: '0px 0px -50px 0px'
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, observerOptions);
+
+    document.querySelectorAll('.fade-in, .scale-in').forEach(el => {
+      observer.observe(el);
+    });
+  </script>
+
+  <!-- Search Modal -->
+  <div class="search-modal-overlay"></div>
+  <div class="search-modal">
+    <div class="search-modal-header">
+      <div class="search-input-wrapper">
+        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="11" cy="11" r="8"/>
+          <path d="M21 21l-4.35-4.35"/>
+        </svg>
+        <input type="text" class="search-input" placeholder="Search treatments... (e.g., head spa, facial, massage)">
+      </div>
+      <button class="search-close-btn" aria-label="Close search">
+        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M18 6L6 18M6 6l12 12"/>
+        </svg>
+      </button>
+    </div>
+    <div class="search-filters">
+      <div class="filter-group">
+        <span class="filter-label">Price</span>
+        <div class="filter-options">
+          <button class="filter-btn active" data-filter-type="price" data-filter-value="all">All</button>
+          <button class="filter-btn" data-filter-type="price" data-filter-value="under50">Under £50</button>
+          <button class="filter-btn" data-filter-type="price" data-filter-value="50-100">£50-£100</button>
+          <button class="filter-btn" data-filter-type="price" data-filter-value="over100">£100+</button>
+        </div>
+      </div>
+      <div class="filter-group">
+        <span class="filter-label">Duration</span>
+        <div class="filter-options">
+          <button class="filter-btn active" data-filter-type="duration" data-filter-value="all">All</button>
+          <button class="filter-btn" data-filter-type="duration" data-filter-value="30">30 min</button>
+          <button class="filter-btn" data-filter-type="duration" data-filter-value="60">45-60 min</button>
+          <button class="filter-btn" data-filter-type="duration" data-filter-value="90plus">75+ min</button>
+        </div>
+      </div>
+      <div class="filter-group">
+        <span class="filter-label">Type</span>
+        <div class="filter-options">
+          <button class="filter-btn active" data-filter-type="category" data-filter-value="all">All</button>
+          <button class="filter-btn" data-filter-type="category" data-filter-value="head-spa">Head Spa</button>
+          <button class="filter-btn" data-filter-type="category" data-filter-value="facial">Facial</button>
+          <button class="filter-btn" data-filter-type="category" data-filter-value="massage">Massage</button>
+          <button class="filter-btn" data-filter-type="category" data-filter-value="fusion">Fusion</button>
+        </div>
+      </div>
+    </div>
+    <div class="search-results"></div>
+    <div class="search-quick-links">
+      <span class="search-quick-links-title">Popular Searches</span>
+      <div class="search-quick-links-list">
+        <a href="treatments/ultimate-exotic-bliss.html" class="quick-link">Ultimate Exotic Bliss</a>
+        <a href="treatments/korean-skincare-ritual.html" class="quick-link">Korean Skincare</a>
+        <a href="treatments/express-massage.html" class="quick-link">Express Massage</a>
+        <a href="services.html" class="quick-link">View All Services</a>
+      </div>
+    </div>
+  </div>
+  <script src="js/search-treatments.js"></script>
+</body>
+</html>

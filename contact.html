@@ -1,0 +1,949 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#8D6F62">
+  <title>Contact Us - Amari Head Spa London | Get in Touch</title>
+  <meta name="description" content="Visit Amari Head Spa at 37 High St, London SE20 7HJ. Contact us for bookings, inquiries, or directions. Open daily 10 am–7 pm. Call 07442 397456.">
+  <meta name="keywords" content="contact Amari Head Spa, spa London SE20, Penge spa, book head spa London, spa near me, 37 High St London">
+  <link rel="canonical" href="https://www.amariheadspa.co.uk/contact.html">
+  <link rel="icon" type="image/png" href="images/Logo.png">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Contact Us - Amari Head Spa London">
+  <meta property="og:description" content="Visit us at 37 High St, London SE20 7HJ. Open daily 10 am–7 pm. Book online or call 07442 397456.">
+  <meta property="og:image" content="https://www.amariheadspa.co.uk/images/new.jpeg">
+  <meta property="og:url" content="https://www.amariheadspa.co.uk/contact.html">
+  <meta property="og:type" content="website">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Contact Us - Amari Head Spa London">
+  <meta name="twitter:description" content="Visit us at 37 High St, London SE20 7HJ. Open daily 10 am–7 pm.">
+  <meta name="twitter:image" content="https://www.amariheadspa.co.uk/images/new.jpeg">
+
+  <!-- Shared Styles -->
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- JSON-LD Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ContactPage",
+    "mainEntity": {
+      "@type": "HealthAndBeautyBusiness",
+      "name": "Amari Head Spa",
+      "telephone": "+447442397456",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "37 High St",
+        "addressLocality": "London",
+        "addressRegion": "Greater London",
+        "postalCode": "SE20 7HJ"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "51.4176",
+        "longitude": "-0.0545"
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+          "opens": "10:00",
+          "closes": "19:00"
+        }
+      ]
+    }
+  }
+  </script>
+
+  <style>
+    /* Contact Page Styles */
+    .contact-hero {
+      background: linear-gradient(135deg, var(--ha-primary) 0%, var(--ha-accent) 100%);
+      color: var(--text-light);
+      padding: clamp(4rem, 10vw, 8rem) clamp(1rem, 3vw, 2rem) clamp(3rem, 6vw, 5rem);
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .contact-hero::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: url('images/new.jpeg') center/cover;
+      opacity: 0.15;
+      z-index: 0;
+    }
+
+    .contact-hero-content {
+      position: relative;
+      z-index: 1;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .contact-hero h1 {
+      color: var(--text-light);
+      margin-bottom: var(--space-md);
+    }
+
+    .contact-hero p {
+      font-size: clamp(1.125rem, 2.5vw, 1.375rem);
+      opacity: 0.95;
+      margin-bottom: var(--space-xl);
+    }
+
+    .contact-content {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: clamp(3rem, 6vw, 4rem);
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    @media (min-width: 992px) {
+      .contact-content {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    .contact-info {
+      display: grid;
+      gap: var(--space-xl);
+    }
+
+    .info-card {
+      background: white;
+      padding: clamp(2rem, 4vw, 2.5rem);
+      border-radius: var(--radius-lg);
+      box-shadow: 0 2px 12px rgba(83, 71, 62, 0.08);
+      border: 1px solid rgba(141, 111, 98, 0.15);
+      transition: all var(--transition);
+    }
+
+    .info-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 12px 40px rgba(83, 71, 62, 0.15);
+      border-color: var(--ha-accent);
+    }
+
+    .info-card h3 {
+      color: var(--ha-accent);
+      font-size: clamp(1.25rem, 2.5vw, 1.5rem);
+      margin-bottom: var(--space-md);
+      display: flex;
+      align-items: center;
+      gap: var(--space-sm);
+    }
+
+    .info-icon {
+      width: 36px;
+      height: 36px;
+      background: linear-gradient(135deg, var(--ha-accent) 0%, var(--ha-primary) 100%);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+
+    .info-icon svg {
+      width: 18px;
+      height: 18px;
+      fill: white;
+    }
+
+    .info-card p {
+      color: var(--text-dark);
+      line-height: 1.8;
+      margin: var(--space-sm) 0;
+    }
+
+    .info-card a {
+      color: var(--ha-primary);
+      text-decoration: none;
+      font-weight: 600;
+      transition: color var(--transition);
+    }
+
+    .info-card a:hover {
+      color: var(--ha-accent);
+    }
+
+    .hours-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .hours-list li {
+      padding: var(--space-xs) 0;
+      display: flex;
+      justify-content: space-between;
+      border-bottom: 1px solid var(--ha-light);
+    }
+
+    .hours-list li:last-child {
+      border-bottom: none;
+    }
+
+    .contact-form-wrapper {
+      background: white;
+      padding: clamp(2rem, 4vw, 3rem);
+      border-radius: var(--radius-lg);
+      box-shadow: 0 2px 12px rgba(83, 71, 62, 0.08);
+      border: 1px solid rgba(141, 111, 98, 0.15);
+    }
+
+    .contact-form-wrapper h2 {
+      color: var(--ha-primary);
+      font-size: clamp(1.5rem, 3vw, 2rem);
+      margin-bottom: var(--space-md);
+    }
+
+    .contact-form-wrapper p {
+      color: var(--text-dark);
+      margin-bottom: var(--space-xl);
+    }
+
+    .form-group {
+      margin-bottom: var(--space-lg);
+    }
+
+    .form-group label {
+      display: block;
+      color: var(--ha-primary);
+      font-weight: 600;
+      margin-bottom: var(--space-xs);
+      font-size: clamp(0.9375rem, 2vw, 1rem);
+    }
+
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+      width: 100%;
+      padding: clamp(0.875rem, 2vw, 1rem);
+      border: 2px solid rgba(141, 111, 98, 0.2);
+      border-radius: var(--radius-md);
+      font-size: clamp(0.9375rem, 2vw, 1rem);
+      font-family: inherit;
+      transition: all var(--transition);
+      background: white;
+      color: var(--text-dark);
+    }
+
+    .form-group input:focus,
+    .form-group select:focus,
+    .form-group textarea:focus {
+      outline: none;
+      border-color: var(--ha-accent);
+      box-shadow: 0 0 0 3px rgba(155, 94, 68, 0.1);
+    }
+
+    .form-group textarea {
+      resize: vertical;
+      min-height: 150px;
+    }
+
+    .form-group small {
+      display: block;
+      color: var(--ha-secondary);
+      margin-top: var(--space-xs);
+      font-size: 0.875rem;
+    }
+
+    .form-submit {
+      width: 100%;
+      margin-top: var(--space-md);
+    }
+
+    .map-section {
+      margin-top: clamp(3rem, 6vw, 5rem);
+    }
+
+    .map-wrapper {
+      background: white;
+      padding: clamp(1.5rem, 3vw, 2rem);
+      border-radius: var(--radius-lg);
+      box-shadow: 0 2px 12px rgba(83, 71, 62, 0.08);
+      border: 1px solid rgba(141, 111, 98, 0.15);
+    }
+
+    .map-wrapper h3 {
+      color: var(--ha-primary);
+      font-size: clamp(1.375rem, 2.75vw, 1.75rem);
+      margin-bottom: var(--space-md);
+      text-align: center;
+    }
+
+    .map-container {
+      position: relative;
+      width: 100%;
+      height: 450px;
+      border-radius: var(--radius-md);
+      overflow: hidden;
+      box-shadow: 0 4px 16px rgba(83, 71, 62, 0.12);
+    }
+
+    .map-container iframe {
+      border: 0;
+    }
+
+    .directions-info {
+      margin-top: var(--space-xl);
+      padding: clamp(1.5rem, 3vw, 2rem);
+      background: var(--ha-light);
+      border-radius: var(--radius-md);
+    }
+
+    .directions-info h4 {
+      color: var(--ha-accent);
+      font-size: clamp(1.125rem, 2.25vw, 1.375rem);
+      margin-bottom: var(--space-md);
+    }
+
+    .directions-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: grid;
+      gap: var(--space-md);
+    }
+
+    .directions-list li {
+      padding-left: 2rem;
+      position: relative;
+      line-height: 1.7;
+      color: var(--text-dark);
+    }
+
+    .directions-list li::before {
+      content: '→';
+      position: absolute;
+      left: 0;
+      color: var(--ha-accent);
+      font-weight: 700;
+      font-size: 1.25rem;
+    }
+
+    .quick-contact {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(min(100%, 240px), 1fr));
+      gap: var(--space-lg);
+      margin-top: clamp(3rem, 6vw, 5rem);
+    }
+
+    .quick-contact-card {
+      background: linear-gradient(135deg, var(--ha-primary) 0%, var(--ha-accent) 100%);
+      color: var(--text-light);
+      padding: clamp(2rem, 4vw, 2.5rem);
+      border-radius: var(--radius-lg);
+      text-align: center;
+      transition: all var(--transition);
+      text-decoration: none;
+      display: block;
+      box-shadow: 0 4px 16px rgba(83, 71, 62, 0.15);
+    }
+
+    .quick-contact-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 12px 40px rgba(83, 71, 62, 0.25);
+    }
+
+    .quick-contact-card svg {
+      width: 48px;
+      height: 48px;
+      margin-bottom: var(--space-md);
+      fill: white;
+    }
+
+    .quick-contact-card h3 {
+      color: var(--text-light);
+      font-size: clamp(1.125rem, 2.25vw, 1.375rem);
+      margin-bottom: var(--space-xs);
+    }
+
+    .quick-contact-card p {
+      color: rgba(255, 255, 255, 0.9);
+      font-size: clamp(0.9375rem, 2vw, 1rem);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header & Navigation -->
+  <header class="header">
+    <nav class="nav">
+      <a href="index.html">
+        <img src="images/Logo.png" alt="Amari Head Spa" class="logo" width="150" height="58">
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="offers.html">Offers</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+        <li>
+          <button class="search-btn" aria-label="Search treatments">
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="11" cy="11" r="8"/>
+              <path d="M21 21l-4.35-4.35"/>
+            </svg>
+          </button>
+        </li>
+        <li><a href="terms.html">T&Cs</a></li>
+        <li><a href="https://www.fresha.com/a/amari-head-spa-london-london-37-high-street-rxtq1qp0/booking?allOffer=true&pId=2565513&cartId=f4708659-8a71-4a86-b41a-c952844d938a" class="btn btn-primary" target="_blank" rel="noopener">Book Now</a></li>
+      </ul>
+      <button class="search-btn-mobile" aria-label="Search treatments">
+        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="11" cy="11" r="8"/>
+          <path d="M21 21l-4.35-4.35"/>
+        </svg>
+      </button>
+      <button class="mobile-menu-btn" aria-label="Toggle menu" aria-expanded="false">
+        <span class="hamburger"></span>
+      </button>
+    </nav>
+  </header>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu">
+    <div class="mobile-menu-header">
+      <h3>Menu</h3>
+      <button class="mobile-menu-close" aria-label="Close menu">×</button>
+    </div>
+
+    <nav class="mobile-menu-nav">
+      <!-- Search Button -->
+      <button class="mobile-menu-search" onclick="openMobileSearch()">
+        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="11" cy="11" r="8"/>
+          <path d="M21 21l-4.35-4.35"/>
+        </svg>
+        Search Treatments
+      </button>
+
+      <!-- Main Links -->
+      <a href="index.html" class="mobile-menu-link">Home</a>
+      <a href="about.html" class="mobile-menu-link">About Us</a>
+
+      <!-- Our Treatments - Collapsible -->
+      <div class="mobile-menu-section">
+        <button class="mobile-menu-section-toggle" onclick="toggleMobileSection('treatments')">
+          <span>Our Treatments</span>
+          <span class="toggle-icon">▼</span>
+        </button>
+        <div class="mobile-menu-subsection" id="mobile-treatments">
+
+          <!-- Head Spa Collection -->
+          <div class="mobile-menu-category">
+            <div class="category-title">Head Spa Collection</div>
+            <a href="treatments/exotic-bliss.html" class="mobile-submenu-link">
+              <span>Exotic Bliss</span>
+              <span class="treatment-price">£85</span>
+            </a>
+            <a href="treatments/exotic-bliss-signature.html" class="mobile-submenu-link">
+              <span>Exotic Bliss Signature</span>
+              <span class="treatment-price">£110</span>
+            </a>
+            <a href="treatments/ultimate-exotic-bliss.html" class="mobile-submenu-link">
+              <span>Ultimate Exotic Bliss</span>
+              <span class="treatment-price">£145</span>
+            </a>
+          </div>
+
+          <!-- Head Spa & Facial Blends -->
+          <div class="mobile-menu-category">
+            <div class="category-title">Spa & Facial Blends</div>
+            <a href="treatments/amari-luxury.html" class="mobile-submenu-link">
+              <span>Amari Luxury</span>
+              <span class="treatment-price">£160</span>
+            </a>
+            <a href="treatments/amari-serenity.html" class="mobile-submenu-link">
+              <span>Amari Serenity</span>
+              <span class="treatment-price">£125</span>
+            </a>
+            <a href="treatments/korean-skincare-ritual.html" class="mobile-submenu-link">
+              <span>Korean Skincare Ritual</span>
+              <span class="treatment-price">£80</span>
+            </a>
+            <a href="treatments/refresh-mini-facial.html" class="mobile-submenu-link">
+              <span>Refresh Mini Facial</span>
+              <span class="treatment-price">£40</span>
+            </a>
+          </div>
+
+          <!-- Head Massage Collection -->
+          <div class="mobile-menu-category">
+            <div class="category-title">Head Massage Collection</div>
+            <a href="treatments/express-massage.html" class="mobile-submenu-link">
+              <span>Express</span>
+              <span class="treatment-price">£45</span>
+            </a>
+            <a href="treatments/ritual-massage.html" class="mobile-submenu-link">
+              <span>Ritual</span>
+              <span class="treatment-price">£60</span>
+            </a>
+            <a href="treatments/deluxe-massage.html" class="mobile-submenu-link">
+              <span>Deluxe</span>
+              <span class="treatment-price">£80</span>
+            </a>
+          </div>
+
+          <!-- Express Fusion Rituals -->
+          <div class="mobile-menu-category">
+            <div class="category-title">Express Fusion Rituals</div>
+            <a href="treatments/amari-harmony.html" class="mobile-submenu-link">
+              <span>Amari Harmony</span>
+              <span class="treatment-price">£125</span>
+            </a>
+            <a href="treatments/back-and-bliss.html" class="mobile-submenu-link">
+              <span>Back & Bliss</span>
+              <span class="treatment-price">£90</span>
+            </a>
+            <a href="treatments/back-and-bliss-advanced.html" class="mobile-submenu-link">
+              <span>Back & Bliss Advanced</span>
+              <span class="treatment-price">£145</span>
+            </a>
+          </div>
+
+          <a href="services.html" class="mobile-view-all-link">Browse All Treatments</a>
+        </div>
+      </div>
+
+      <a href="offers.html" class="mobile-menu-link">Special Offers</a>
+      <a href="contact.html" class="mobile-menu-link">Contact Us</a>
+      <a href="terms.html" class="mobile-menu-link">Terms & Conditions</a>
+    </nav>
+
+    <div class="mobile-menu-footer">
+      <a href="https://www.fresha.com/a/amari-head-spa-london-london-37-high-street-rxtq1qp0/booking?allOffer=true&pId=2565513&cartId=f4708659-8a71-4a86-b41a-c952844d938a" class="btn btn-primary" target="_blank" rel="noopener">Book Appointment</a>
+      <a href="https://wa.me/447442397456?text=Hi%2C%20I%27d%20like%20to%20book%20a%20head%20spa%20treatment" class="btn btn-secondary" target="_blank" rel="noopener">WhatsApp Us</a>
+      <a href="terms.html" class="mobile-menu-terms-link">Terms & Conditions</a>
+    </div>
+  </div>
+
+  <!-- Main Content -->
+  <main>
+    <!-- Contact Hero -->
+    <section class="contact-hero">
+      <div class="contact-hero-content">
+        <h1>Get in Touch</h1>
+        <p>We'd love to hear from you. Visit us, call us, or send us a message to book your treatment or ask any questions.</p>
+      </div>
+    </section>
+
+    <!-- Quick Contact Options -->
+    <section style="background: white;">
+      <div class="section-inner">
+        <div class="quick-contact">
+          <a href="https://www.fresha.com/a/amari-head-spa-london-london-37-high-street-rxtq1qp0/booking?allOffer=true&pId=2565513&cartId=f4708659-8a71-4a86-b41a-c952844d938a" class="quick-contact-card scale-in" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24">
+              <path d="M19 4h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V10h14v10zM9 14H7v-2h2v2zm4 0h-2v-2h2v2zm4 0h-2v-2h2v2zm-8 4H7v-2h2v2zm4 0h-2v-2h2v2zm4 0h-2v-2h2v2z"/>
+            </svg>
+            <h3>Book Online</h3>
+            <p>Quick & Easy Booking</p>
+          </a>
+
+          <a href="tel:+447442397456" class="quick-contact-card scale-in">
+            <svg viewBox="0 0 24 24">
+              <path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56a.977.977 0 00-1.01.24l-1.57 1.97c-2.83-1.35-5.48-3.9-6.89-6.83l1.95-1.66c.27-.28.35-.67.24-1.02-.37-1.11-.56-2.3-.56-3.53 0-.54-.45-.99-.99-.99H4.19C3.65 3 3 3.24 3 3.99 3 13.28 10.73 21 20.01 21c.71 0 .99-.63.99-1.18v-3.45c0-.54-.45-.99-.99-.99z"/>
+            </svg>
+            <h3>Call Us</h3>
+            <p>07442 397456</p>
+          </a>
+
+          <a href="https://wa.me/447442397456?text=Hi%2C%20I%27d%20like%20to%20book%20a%20head%20spa%20treatment" class="quick-contact-card scale-in" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24">
+              <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L0 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+            </svg>
+            <h3>WhatsApp</h3>
+            <p>07442 397456</p>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Information & Form -->
+    <section style="background: var(--ha-light);">
+      <div class="section-inner">
+        <div class="contact-content">
+
+          <!-- Contact Information -->
+          <div class="contact-info">
+            <div class="info-card fade-in">
+              <h3>
+                <div class="info-icon">
+                  <svg viewBox="0 0 24 24">
+                    <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+                  </svg>
+                </div>
+                Visit Us
+              </h3>
+              <p>
+                <strong>Amari Head Spa</strong><br>
+                37 High St<br>
+                London, SE20 7HJ
+              </p>
+              <p style="margin-top: var(--space-md); padding-top: var(--space-md); border-top: 1px solid var(--ha-light);">
+                <strong>Getting Here:</strong><br>
+                4 minutes walk from Penge East Station<br>
+                Free parking available after 12pm
+              </p>
+            </div>
+
+            <div class="info-card fade-in">
+              <h3>
+                <div class="info-icon">
+                  <svg viewBox="0 0 24 24">
+                    <circle cx="12" cy="12" r="10"/>
+                    <polyline points="12 6 12 12 16 14"/>
+                  </svg>
+                </div>
+                Opening Hours
+              </h3>
+              <ul class="hours-list">
+                <li><span>Monday</span><span>10 am–7 pm</span></li>
+                <li><span>Tuesday</span><span>10 am–7 pm</span></li>
+                <li><span>Wednesday</span><span>10 am–7 pm</span></li>
+                <li><span>Thursday</span><span>10 am–7 pm</span></li>
+                <li><span>Friday</span><span>10 am–7 pm</span></li>
+                <li><span>Saturday</span><span>10 am–7 pm</span></li>
+                <li><span>Sunday</span><span>10 am–7 pm</span></li>
+              </ul>
+            </div>
+
+            <div class="info-card fade-in">
+              <h3>
+                <div class="info-icon">
+                  <svg viewBox="0 0 24 24">
+                    <path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56a.977.977 0 00-1.01.24l-1.57 1.97c-2.83-1.35-5.48-3.9-6.89-6.83l1.95-1.66c.27-.28.35-.67.24-1.02-.37-1.11-.56-2.3-.56-3.53 0-.54-.45-.99-.99-.99H4.19C3.65 3 3 3.24 3 3.99 3 13.28 10.73 21 20.01 21c.71 0 .99-.63.99-1.18v-3.45c0-.54-.45-.99-.99-.99z"/>
+                  </svg>
+                </div>
+                Contact Details
+              </h3>
+              <p>
+                <strong>Phone:</strong><br>
+                <a href="tel:+447442397456">07442 397456</a>
+              </p>
+              <p style="margin-top: var(--space-md);">
+                <strong>WhatsApp:</strong><br>
+                <a href="https://wa.me/447442397456" target="_blank" rel="noopener">07442 397456</a>
+              </p>
+              <p style="margin-top: var(--space-md);">
+                <strong>Social Media:</strong><br>
+                <a href="https://www.instagram.com/amariheadspalondon?igsh=dDNxenNoY21qNG96" target="_blank" rel="noopener">Instagram</a> |
+                <a href="https://www.tiktok.com/@amari_headspa?_t=ZN-8yWSyv8sjNW&_r=1" target="_blank" rel="noopener">TikTok</a>
+              </p>
+            </div>
+          </div>
+
+          <!-- Contact Form -->
+          <div class="contact-form-wrapper fade-in">
+            <h2>Send Us a Message</h2>
+            <p>Have a question or special request? Fill out the form below and we'll get back to you as soon as possible.</p>
+
+            <form class="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+              <div class="form-group">
+                <label for="name">Full Name *</label>
+                <input type="text" id="name" name="name" required placeholder="Your name">
+              </div>
+
+              <div class="form-group">
+                <label for="email">Email Address *</label>
+                <input type="email" id="email" name="email" required placeholder="your.email@example.com">
+              </div>
+
+              <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" placeholder="Your phone number">
+                <small>Optional - helpful for booking confirmations</small>
+              </div>
+
+              <div class="form-group">
+                <label for="service">Interested In</label>
+                <select id="service" name="service">
+                  <option value="">Select a service (optional)</option>
+                  <option value="exotic-bliss">Exotic Bliss (£85, 60 mins)</option>
+                  <option value="exotic-bliss-signature">Exotic Bliss Signature (£110, 90 mins)</option>
+                  <option value="ultimate-exotic-bliss">Ultimate Exotic Bliss (£145, 1.5 hrs)</option>
+                  <option value="serenity">Serenity (£125, 1.5 hrs)</option>
+                  <option value="luxury">Luxury (£160, 2 hrs)</option>
+                  <option value="back-bliss">Back & Bliss (£90, 1 hr)</option>
+                  <option value="dual-radiance">Dual Radiance (£80, 1 hr)</option>
+                  <option value="asian-hair-wash">Asian Hair Wash (£40, 30 mins)</option>
+                  <option value="head-massage-express">Head Massage - Express (£45, 30 mins)</option>
+                  <option value="head-massage-ritual">Head Massage - Ritual (£60, 45 mins)</option>
+                  <option value="head-massage-deluxe">Head Massage - Deluxe (£80, 60 mins)</option>
+                  <option value="general-inquiry">General Inquiry</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="message">Message *</label>
+                <textarea id="message" name="message" required placeholder="Tell us how we can help you..."></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary form-submit">Send Message</button>
+
+              <p style="margin-top: var(--space-md); font-size: 0.875rem; color: var(--ha-secondary); text-align: center;">
+                For immediate booking, please use our <a href="https://www.fresha.com/a/amari-head-spa-london-london-37-high-street-rxtq1qp0/booking?allOffer=true&pId=2565513&cartId=f4708659-8a71-4a86-b41a-c952844d938a" target="_blank" rel="noopener" style="color: var(--ha-accent); font-weight: 600;">online booking system</a>
+              </p>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="map-section" style="background: white;">
+      <div class="section-inner">
+        <div class="map-wrapper fade-in">
+          <h3>Find Us on the Map</h3>
+          <div class="map-container">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2486.8698!2d-0.0545!3d51.4176!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTHCsDI1JzAzLjQiTiAwwrAwMycxNi4yIlc!5e0!3m2!1sen!2suk!4v1234567890" width="100%" height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+
+          <div class="directions-info">
+            <h4>Directions & Parking</h4>
+            <ul class="directions-list">
+              <li><strong>By Train:</strong> Penge East Station is just 4 minutes walk away. We're easily accessible from central London via Overground services.</li>
+              <li><strong>By Bus:</strong> Multiple bus routes service the High Street, with stops directly outside or nearby.</li>
+              <li><strong>By Car:</strong> Free parking is available on the High Street after 12:00 PM on weekdays and all day on Sundays. Paid parking is available before 12:00 PM.</li>
+              <li><strong>Walking:</strong> We're located on the main High Street in Penge, easily identifiable by our signage.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section style="background: var(--ha-light);">
+      <div class="section-inner">
+        <div class="cta-banner fade-in">
+          <h2>Ready to Book Your Treatment?</h2>
+          <p>Experience the ultimate in relaxation and rejuvenation. Book your appointment today.</p>
+          <div style="display: flex; gap: var(--space-md); justify-content: center; flex-wrap: wrap; margin-top: var(--space-xl);">
+            <a href="https://www.fresha.com/a/amari-head-spa-london-london-37-high-street-rxtq1qp0/booking?allOffer=true&pId=2565513&cartId=f4708659-8a71-4a86-b41a-c952844d938a" class="btn btn-primary" target="_blank" rel="noopener">Book Online Now</a>
+            <a href="https://www.fresha.com/a/amari-head-spa-london-london-37-high-street-rxtq1qp0/gift-cards?menu=true&pId=2565513" class="btn btn-secondary" target="_blank" rel="noopener">Gift Vouchers</a>
+            <a href="services.html" class="btn btn-secondary">View Services</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-section">
+        <img src="images/Logo.png" alt="Amari Head Spa" class="footer-logo" width="140" height="68" loading="lazy" decoding="async">
+        <p>Luxury head spa treatments in the heart of London</p>
+        <div class="social-links" aria-label="Social media and contact links">
+          <a href="https://www.instagram.com/amariheadspalondon?igsh=dDNxenNoY21qNG96" aria-label="Instagram" target="_blank" rel="noopener" title="Follow us on Instagram">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
+              <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+            </svg>
+          </a>
+          <a href="https://www.tiktok.com/@amari_headspa?_t=ZN-8yWSyv8sjNW&_r=1" aria-label="TikTok" target="_blank" rel="noopener" title="Follow us on TikTok">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
+              <path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-5.2 1.74 2.89 2.89 0 012.31-4.64 2.93 2.93 0 01.88.13V9.4a6.84 6.84 0 00-1-.05A6.33 6.33 0 005 20.1a6.34 6.34 0 0010.86-4.43v-7a8.16 8.16 0 004.77 1.52v-3.4a4.85 4.85 0 01-1-.1z"/>
+            </svg>
+          </a>
+          <a href="https://wa.me/447442397456?text=Hi%2C%20I%27d%20like%20to%20book%20a%20head%20spa%20treatment" aria-label="WhatsApp" target="_blank" rel="noopener" title="Message us on WhatsApp">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
+              <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L0 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+            </svg>
+          </a>
+          <a href="tel:+447442397456" aria-label="Call us" title="Call us">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
+              <path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56a.977.977 0 00-1.01.24l-1.57 1.97c-2.83-1.35-5.48-3.9-6.89-6.83l1.95-1.66c.27-.28.35-.67.24-1.02-.37-1.11-.56-2.3-.56-3.53 0-.54-.45-.99-.99-.99H4.19C3.65 3 3 3.24 3 3.99 3 13.28 10.73 21 20.01 21c.71 0 .99-.63.99-1.18v-3.45c0-.54-.45-.99-.99-.99z"/>
+            </svg>
+          </a>
+          <a href="https://www.fresha.com/a/amari-head-spa-london-london-37-high-street-rxtq1qp0/booking?allOffer=true&pId=2565513&cartId=f4708659-8a71-4a86-b41a-c952844d938a" aria-label="Book online" target="_blank" rel="noopener" title="Book online">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
+              <path d="M19 4h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V10h14v10zM9 14H7v-2h2v2zm4 0h-2v-2h2v2zm4 0h-2v-2h2v2zm-8 4H7v-2h2v2zm4 0h-2v-2h2v2zm4 0h-2v-2h2v2z"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+      <div class="footer-section">
+        <h3>Quick Links</h3>
+        <p>
+          <a href="services.html">Our Services</a><br>
+          <a href="about.html">About Us</a><br>
+          <a href="offers.html">Special Offers</a><br>
+          <a href="contact.html">Contact</a><br>
+          <a href="terms.html">Terms & Conditions</a>
+        </p>
+      </div>
+      <div class="footer-section">
+        <h3>Visit Us</h3>
+        <p>37 High St<br>London, SE20 7HJ<br>4 min walk from Penge Station</p>
+      </div>
+      <div class="footer-section">
+        <h3>Contact</h3>
+        <p>
+          <a href="tel:+447442397456">07442 397456</a><br>
+          <a href="https://wa.me/447442397456" target="_blank" rel="noopener">WhatsApp: 07442 397456</a><br>
+          Monday–Sunday: 10 am–7 pm
+        </p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 Amari Head Spa. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp Button -->
+  <a href="https://wa.me/447442397456?text=Hi%2C%20I%27d%20like%20to%20book%20a%20head%20spa%20treatment" class="floating-whatsapp-btn" target="_blank" rel="noopener" aria-label="WhatsApp Us">
+    <svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L0 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+    </svg>
+  </a>
+
+  <!-- Scripts -->
+  <script>
+    // Mobile Menu Toggle
+    const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+    const mobileMenu = document.querySelector('.mobile-menu');
+    const mobileMenuClose = document.querySelector('.mobile-menu-close');
+    let overlay = document.querySelector('.mobile-menu-overlay');
+
+    // Create overlay if it doesn't exist
+    if (!overlay) {
+      overlay = document.createElement('div');
+      overlay.className = 'mobile-menu-overlay';
+      document.body.appendChild(overlay);
+    }
+
+    // Open menu
+    mobileMenuBtn.addEventListener('click', () => {
+      mobileMenuBtn.classList.add('active');
+      mobileMenu.classList.add('active');
+      overlay.classList.add('active');
+      mobileMenuBtn.setAttribute('aria-expanded', 'true');
+      document.body.style.overflow = 'hidden';
+    });
+
+    // Close menu function
+    function closeMobileMenu() {
+      mobileMenuBtn.classList.remove('active');
+      mobileMenu.classList.remove('active');
+      overlay.classList.remove('active');
+      mobileMenuBtn.setAttribute('aria-expanded', 'false');
+      document.body.style.overflow = '';
+    }
+
+    // Close button
+    if (mobileMenuClose) {
+      mobileMenuClose.addEventListener('click', closeMobileMenu);
+    }
+
+    // Close when clicking overlay
+    overlay.addEventListener('click', closeMobileMenu);
+
+    // Close when clicking a link
+    document.querySelectorAll('.mobile-menu a').forEach(link => {
+      link.addEventListener('click', closeMobileMenu);
+    });
+
+    // Toggle subsection
+    function toggleMobileSection(sectionId) {
+      const subsection = document.getElementById(`mobile-${sectionId}`);
+      const toggle = event.currentTarget;
+
+      if (subsection && toggle) {
+        subsection.classList.toggle('active');
+        toggle.classList.toggle('active');
+      }
+    }
+
+    // Scroll Animations
+    const observerOptions = {
+      threshold: 0.1,
+      rootMargin: '0px 0px -50px 0px'
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, observerOptions);
+
+    document.querySelectorAll('.fade-in, .scale-in').forEach(el => {
+      observer.observe(el);
+    });
+  </script>
+
+  <!-- Search Modal -->
+  <div class="search-modal-overlay"></div>
+  <div class="search-modal">
+    <div class="search-modal-header">
+      <div class="search-input-wrapper">
+        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="11" cy="11" r="8"/>
+          <path d="M21 21l-4.35-4.35"/>
+        </svg>
+        <input type="text" class="search-input" placeholder="Search treatments... (e.g., head spa, facial, massage)">
+      </div>
+      <button class="search-close-btn" aria-label="Close search">
+        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M18 6L6 18M6 6l12 12"/>
+        </svg>
+      </button>
+    </div>
+    <div class="search-filters">
+      <div class="filter-group">
+        <span class="filter-label">Price</span>
+        <div class="filter-options">
+          <button class="filter-btn active" data-filter-type="price" data-filter-value="all">All</button>
+          <button class="filter-btn" data-filter-type="price" data-filter-value="under50">Under £50</button>
+          <button class="filter-btn" data-filter-type="price" data-filter-value="50-100">£50-£100</button>
+          <button class="filter-btn" data-filter-type="price" data-filter-value="over100">£100+</button>
+        </div>
+      </div>
+      <div class="filter-group">
+        <span class="filter-label">Duration</span>
+        <div class="filter-options">
+          <button class="filter-btn active" data-filter-type="duration" data-filter-value="all">All</button>
+          <button class="filter-btn" data-filter-type="duration" data-filter-value="30">30 min</button>
+          <button class="filter-btn" data-filter-type="duration" data-filter-value="60">45-60 min</button>
+          <button class="filter-btn" data-filter-type="duration" data-filter-value="90plus">75+ min</button>
+        </div>
+      </div>
+      <div class="filter-group">
+        <span class="filter-label">Type</span>
+        <div class="filter-options">
+          <button class="filter-btn active" data-filter-type="category" data-filter-value="all">All</button>
+          <button class="filter-btn" data-filter-type="category" data-filter-value="head-spa">Head Spa</button>
+          <button class="filter-btn" data-filter-type="category" data-filter-value="facial">Facial</button>
+          <button class="filter-btn" data-filter-type="category" data-filter-value="massage">Massage</button>
+          <button class="filter-btn" data-filter-type="category" data-filter-value="fusion">Fusion</button>
+        </div>
+      </div>
+    </div>
+    <div class="search-results"></div>
+    <div class="search-quick-links">
+      <span class="search-quick-links-title">Popular Searches</span>
+      <div class="search-quick-links-list">
+        <a href="treatments/ultimate-exotic-bliss.html" class="quick-link">Ultimate Exotic Bliss</a>
+        <a href="treatments/korean-skincare-ritual.html" class="quick-link">Korean Skincare</a>
+        <a href="treatments/express-massage.html" class="quick-link">Express Massage</a>
+        <a href="services.html" class="quick-link">View All Services</a>
+      </div>
+    </div>
+  </div>
+  <script src="js/search-treatments.js"></script>
+</body>
+</html>
